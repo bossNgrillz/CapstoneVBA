@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+div, form, label, input, button{
+    margin: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.split{
+    width: 45%;
+}
+
+.split input{
+    width: 100%;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}

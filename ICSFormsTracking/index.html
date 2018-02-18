@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ICS Forms and Resources Tracking</title>
+</head>
+<body>
+    <h1>ICS Forms and Resources Tracking</h1>
+
+    <h3>Start Here</h3>
+    <form class="split left">
+        <label>Incident Name: </label><input type="text" id="incidentName"/><br />
+        <label>Date From: </label><input type="text" id="dateFrom"/><br />
+        <label>Date To: </label><input type="text" id="dateTo"/><br />
+        <label>Time From: </label><input type="text" id="timeFrom"/><br />
+        <label>Time To: </label><input type="text" id="timeTo"/><br />
+        <label>Incident Number: </label><input type="text" id="incidentNumber"/><br />
+    </form>
+    <div class="split right">
+            <button type="button" id="formsMenu">Forms Menu</button>
+            <button type="button" id="">Got To Cover</button>
+            <button type="button" id="">ICS-201 Initial Attack</button>
+            <button type="button" id="">ICS Extended Attack Forms</button>
+            <button type="button" id="">Master Resource List</button>
+            <button type="button" id="">Resource Tracking Worksheets</button>
+    </div>
+    
+    
+    <script>
+        const electron = require('electron');
+        const {ipcRenderer} = electron;
+        //const form = document.querySelector('form');
+        const input = document.querySelector('input');
+        console.log(input.length);
+        input.after('\r\n');
+
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function(e){
+            const id = btn.id;
+            ipcRenderer.send('btn:click', id);
+        });
+
+    </script>
+</body>
+</html>
