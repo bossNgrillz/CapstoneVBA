@@ -1,0 +1,25 @@
+@media print {
+    .form-control, .form-control.nobug {
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    font-size:14px;
+    }
+    .form-control.nobug {
+        transition: none; /*-- THIS IS IMPORTANT -- */
+        }
+    input, textarea {
+        outline: none !important;
+        box-shadow: none;
+        border: none;
+        overflow: visible;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+            }
+    .formtext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11pt;
+        font-weight: normal;
+    }
+                    
+}    
