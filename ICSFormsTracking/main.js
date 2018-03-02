@@ -9,14 +9,14 @@ let mainWindow, formsWindow;
 app.on('ready', function(){
     // create starter page
     mainWindow = new BrowserWindow();
-
+    
     // load index.html
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file',
         slashes: true
     }));
-
+    mainWindow.maximize();
     mainWindow.on('closed', () => {
         app.quit();
     });

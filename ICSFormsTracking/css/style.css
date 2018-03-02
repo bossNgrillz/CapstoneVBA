@@ -1,7 +1,18 @@
 *{
     box-sizing: border-box;
 }
-div, form, label, input, button{
+
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+form, label, input, button{
     margin: 10px;
 }
 
@@ -9,12 +20,20 @@ ul{
     list-style: none;
 }
 
-.split{
-    width: 45%;
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
 }
 
-.split input{
-    width: 100%;
+.wrapper > div{
+    padding: 5px;
+    float: left;
+    overflow-y: scroll;
+    align-items: stretch;
+
+    
 }
 
 .right{
@@ -23,4 +42,35 @@ ul{
 
 .left{
     float: left;
+}
+
+#mainMenu{
+    width: 10%;
+    min-width: 100px;
+    max-width: 150px;
+
+}
+
+#menuExt{
+    width: 20%;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+#menuExt, .formOptions{
+    display: none;
+}
+
+#content{
+    flex: 2;
+}
+
+#toggleExt{
+    width: 5px;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.wrapper > div, .formBlock{
+    border: 1px solid blue;
 }
