@@ -91,13 +91,8 @@ function GetForms(){
 
     for(let i = 0; i < forms.length; i++){
         list += '<div class="formBlock">';
-<<<<<<< HEAD
         list += '<button type="button" class="btn btn-light btn-block text-left btn-lg border-top-0 border-right-0 border-left-0" id="formNum">' + forms[i].num + '</button>';
         list += '<div class="formOptions"><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-file"></i> New</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-save"></i> Save</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-folder-open"></i> Open</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-share-square"></i> Export</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-print"></i> Print</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-trash-alt"></i> Delete</button>';
-=======
-        list += '<button type="button" id="formNum">' + forms[i].num + '</button>';
-        list += '<div class="formOptions"><button type="button" >New</button><button type="button">Save</button><button type="button">Open</button><button type="button">Export</button><button type="button" >Print</button><button type="button">Delete</button>';
->>>>>>> 3bc39eceaa5f545ae67130ad821bab326c4bf4c8
         list += '</div></div>';
     }
 
