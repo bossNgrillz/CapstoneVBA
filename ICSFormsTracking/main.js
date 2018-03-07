@@ -54,6 +54,7 @@ const mainMenuTemp = [
     }
 ];
 
+/*
 // catches btn click
 ipcMain.on('btn:click', function(e, arg) {
     
@@ -78,6 +79,7 @@ function createFormsWin(){
         formsWindow = null;
     });
 }
+*/
 
 // ------------------------------------------------- 
 // if mac, add empty obj to mainMenu

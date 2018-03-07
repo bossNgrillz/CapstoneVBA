@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css" />
+
     <script>window.$ = window.jQuery = require('jquery');</script>
     <title>ICS Forms and Resources Tracking</title>
 </head>
@@ -24,6 +25,7 @@
             </div>
             <div id="toggleExt"></div>
             <div id="content">
+                <!-- place for importing -->
                     <h1>ICS Forms and Resources Tracking</h1>
         
                     <h3>Start Here</h3>
@@ -42,74 +44,8 @@
     
     
     <script>
-        $('#toggleExt').click(function(){
-            $('#menuExt').toggle();
-        });
-        
-        $('#formsMenu').click(function(){
-            GetForms();
-        });
-
-        $(document).on('click', '#formNum', function(){
-            $('.formOptions').hide();
-            $(this).next('.formOptions').show();
-        });
-
-        function GetForms(){
-        
-            const forms = [
-                {name: 'Incident Objectives',
-            num: '202'},
-                {name: 'Organizational Assignment List',
-            num: '203'},
-                {name: 'Divishion Assignment List',
-            num: '204'},
-                {name: 'Add a 204',
-            num: 'Add 204'},
-                {name: 'Incident Radio Communications Plan',
-            num: '205'},
-                {name: 'Communications List',
-            num: '205A'},
-                {name: 'Medical Plan',
-            num: '206'},
-                {name: 'Safety Message/Plan',
-            num: '208'},
-                {name: 'Incident Status Summary',
-            num: '209'},
-                {name: 'Resource Status Change',
-            num: '210'},
-                {name: 'Incident Check-In List',
-            num: '211'},
-                {name: 'General Message',
-            num: '213'},
-                {name: 'Activity Log',
-            num: '214'},
-                {name: 'Operational Planning Worksheet',
-            num: '215'},
-                {name: 'Incident Action Plan Safety Analysis',
-            num: '215A'},
-                {name: 'Support Vehicle/Equipment Inventory',
-            num: '218'},
-                {name: 'Air Operations Summary',
-            num: '220'},
-                {name: 'Demobilization Check-Out',
-            num: '221'},
-                {name: 'Incident Personnel Performance Rating',
-            num: '225'}
-            ];
-            
-            let list = '';
-
-            for(let i = 0; i < forms.length; i++){
-                list += '<div class="formBlock">';
-                list += '<button type="button" id="formNum">' + forms[i].num + '</button>';
-                list += '<div class="formOptions"><button type="button" id="">New</button><button type="button" id="">Save</button><button type="button" id="">Open</button><button type="button" id="">Export</button><button type="button" id="">Print</button><button type="button" id="">Delete</button>';
-                list += '</div></div>';
-            }
-
-            $('#menuExt').html(list);
-            $('#menuExt').show();
-        }
+        //js for menu
+        require('./js/menu');
 
 /*
         const electron = require('electron');
