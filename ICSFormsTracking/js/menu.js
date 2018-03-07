@@ -16,8 +16,11 @@ $(document).on('click', '#formNum', function(){
 });
 
 $(document).on('click', '.formOptions button', function(){
-    const buttonClicked = $(this).text();
+    const buttonClicked = $(this).text().trim();
     const formNumber = $(this).parent().parent().find('#formNum').text();
+
+    //console.log(buttonClicked);
+
     switch(buttonClicked) {
         case 'New':
             newForm(formNumber);
@@ -92,7 +95,13 @@ function GetForms(){
     for(let i = 0; i < forms.length; i++){
         list += '<div class="formBlock">';
         list += '<button type="button" class="btn btn-light btn-block text-left btn-lg border-top-0 border-right-0 border-left-0" id="formNum">' + forms[i].num + '</button>';
-        list += '<div class="formOptions"><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-file"></i> New</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-save"></i> Save</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-folder-open"></i> Open</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-share-square"></i> Export</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-print"></i> Print</button><button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-trash-alt"></i> Delete</button>';
+        list += '<div class="formOptions">' + 
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-file"></i> New</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-save"></i> Save</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-folder-open"></i> Open</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-share-square"></i> Export</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-print"></i> Print</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-trash-alt"></i> Delete</button>';
         list += '</div></div>';
     }
 
@@ -104,8 +113,3 @@ function clearMenuExt(){
     $('#menuExt').html('');
 }
 
-//
-function importFormsToDom(){
-    const links = document.querySelector('link[rel="import"]');
-
-}
