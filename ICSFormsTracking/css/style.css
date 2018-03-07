@@ -20,11 +20,31 @@ ul{
     list-style: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(248, 249, 250);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(185, 185, 185);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
+
 .wrapper{
     display: flex;
     flex-direction: row;
     height: 100%;
-
+    background-color:rgb(248, 249, 250);
 }
 
 .wrapper > div{
@@ -32,8 +52,6 @@ ul{
     float: left;
     overflow-y: scroll;
     align-items: stretch;
-
-    
 }
 
 .right{
@@ -45,19 +63,90 @@ ul{
 }
 
 #mainMenu{
+    padding: 0 !important;
     width: 10%;
-    min-width: 100px;
-    max-width: 150px;
+    min-width: 180px;
+    max-width: 200px;
+    overflow: hidden;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #85baff 100%);
+}
 
+#mainMenu > .btn{
+    height: 70px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: -8.5px;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #85baff 100%);
+    width: 200px;
+    transition: 0.4s;
+}
+
+#mainMenu > .btn:hover, #mainMenu > .btn:focus{
+    box-shadow: none;
+    /* background-position: right center !important; */
+}
+
+#mainMenu > .btn span {
+    white-space:normal !important;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+#mainMenu > .btn span:after {
+    white-space:normal !important;
+    content: '\00bb';
+    font-size: 16px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+#mainMenu > .btn:hover span {
+    white-space:normal !important;
+    padding-right: 20px;
+}
+
+#mainMenu > .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#mainMenu > button > i{
+    position: relative;
+    top: 5px;
+    left: 0px;
+    display: inline-block !important;
+}
+
+#mainMenu > button > span{
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.btn{
+    white-space:normal !important;
+    max-width:200px;
+}
+
+.btn-light:hover, .btn-light:focus{
+    background-color: #c2e9fb !important;
+    border-bottom: 1px double black;
 }
 
 #menuExt{
     width: 20%;
     min-width: 150px;
-    max-width: 300px;
+    max-width: 180px;
 }
 
 #menuExt, .formOptions{
+    padding: 0 !important;
     display: none;
 }
 
@@ -67,10 +156,17 @@ ul{
 
 #toggleExt{
     width: 5px;
-    background-color: cadetblue;
+    background-color: #c2e9fb;
     overflow: hidden;
+    border-right: 1px solid black;
 }
 
 .wrapper > div, .formBlock{
-    border: 1px solid blue;
+    text-align: left;
+    border-bottom: 1px solid black !important;
+}
+
+.formBlock > button{
+    border-radius: 0;
+    border-bottom: 1px solid black !important;
 }

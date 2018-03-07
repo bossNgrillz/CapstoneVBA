@@ -5,112 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
     <title>ICS Forms and Resources Tracking</title>
 </head>
 <body>
     <div class="wrapper">
-            <div id="mainMenu">
-                    <button type="button" id="">Home</button>
-                    <button type="button" id="formsMenu">Forms Menu</button>
-                    <button type="button" id="">Master Resource List</button>
-                    <button type="button" id="">Resource Tracking Worksheets</button>
-                    <button type="button" id="">ICS-201 Initial Attack</button>
-                    <button type="button" id="">ICS Extended Attack Forms</button>
-                    <button type="button" id="">About</button>
-            </div>
-            <div id="menuExt">
-                stuff
-            </div>
-            <div id="toggleExt"></div>
-            <div id="content">
-                    <h1>ICS Forms and Resources Tracking</h1>
-        
-                    <h3>Start Here</h3>
-                    <form class="split left">
-                        <label>Incident Name: </label><input type="text" id="incidentName"/><br />
-                        <label>Date From: </label><input type="text" id="dateFrom"/><br />
-                        <label>Date To: </label><input type="text" id="dateTo"/><br />
-                        <label>Time From: </label><input type="text" id="timeFrom"/><br />
-                        <label>Time To: </label><input type="text" id="timeTo"/><br />
-                        <label>Incident Number: </label><input type="text" id="incidentNumber"/><br />
-                    </form>
-            </div>
+        <div id="mainMenu" class="col-m-8">
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-home" aria-hidden="true"></i><span class="btnText">Home</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id="formsMenu"><i class="fas fa-bars" aria-hidden="true"></i><span class="btnText">Forms Menu</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-list-alt" aria-hidden="true"></i><span class="btnText">Master<br>Resource List</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-clipboard-list" aria-hidden="true"></i><span class="btnText">Resource Tracking<br>Worksheets</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-table" aria-hidden="true"></i><span class="btnText">ICS-201<br>Initial Attack</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-file-alt" aria-hidden="true"></i><span class="btnText">ICS Extended<br>Attack Forms</span></button>
+            <button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-info-circle" aria-hidden="true"></i><span class="btnText">About</span></button>
+        </div>
+        <div id="menuExt">
+            stuff
+        </div>
+        <div id="toggleExt"></div>
+        <div id="content">
+            <h1>ICS Forms and Resources Tracking</h1>
+
+            <h3>Start Here</h3>
+            <form class="split left">
+                <label>Incident Name: </label><input type="text" id="incidentName"/><br />
+                <label>Date From: </label><input type="text" id="dateFrom"/><br />
+                <label>Date To: </label><input type="text" id="dateTo"/><br />
+                <label>Time From: </label><input type="text" id="timeFrom"/><br />
+                <label>Time To: </label><input type="text" id="timeTo"/><br />
+                <label>Incident Number: </label><input type="text" id="incidentNumber"/><br />
+            </form>
+        </div>
     </div><!-- end wrap -->
     
     
-    
-    
     <script>
-        $('#toggleExt').click(function(){
-            $('#menuExt').toggle();
-        });
-        
-        $('#formsMenu').click(function(){
-            GetForms();
-        });
-
-        $(document).on('click', '#formNum', function(){
-            $('.formOptions').hide();
-            $(this).next('.formOptions').show();
-        });
-
-        function GetForms(){
-        
-            const forms = [
-                {name: 'Incident Objectives',
-            num: '202'},
-                {name: 'Organizational Assignment List',
-            num: '203'},
-                {name: 'Divishion Assignment List',
-            num: '204'},
-                {name: 'Add a 204',
-            num: 'Add 204'},
-                {name: 'Incident Radio Communications Plan',
-            num: '205'},
-                {name: 'Communications List',
-            num: '205A'},
-                {name: 'Medical Plan',
-            num: '206'},
-                {name: 'Safety Message/Plan',
-            num: '208'},
-                {name: 'Incident Status Summary',
-            num: '209'},
-                {name: 'Resource Status Change',
-            num: '210'},
-                {name: 'Incident Check-In List',
-            num: '211'},
-                {name: 'General Message',
-            num: '213'},
-                {name: 'Activity Log',
-            num: '214'},
-                {name: 'Operational Planning Worksheet',
-            num: '215'},
-                {name: 'Incident Action Plan Safety Analysis',
-            num: '215A'},
-                {name: 'Support Vehicle/Equipment Inventory',
-            num: '218'},
-                {name: 'Air Operations Summary',
-            num: '220'},
-                {name: 'Demobilization Check-Out',
-            num: '221'},
-                {name: 'Incident Personnel Performance Rating',
-            num: '225'}
-            ];
-            
-            let list = '';
-
-            for(let i = 0; i < forms.length; i++){
-                list += '<div class="formBlock">';
-                list += '<button type="button" id="formNum">' + forms[i].num + '</button>';
-                list += '<div class="formOptions"><button type="button" id="">New</button><button type="button" id="">Save</button><button type="button" id="">Open</button><button type="button" id="">Export</button><button type="button" id="">Print</button><button type="button" id="">Delete</button>';
-                list += '</div></div>';
-            }
-
-            $('#menuExt').html(list);
-            $('#menuExt').show();
-        }
-
+        //js for menu
+        require('./js/menu');
 /*
         const electron = require('electron');
         const {ipcRenderer} = electron;
@@ -118,7 +53,6 @@
         const input = document.querySelector('input');
         console.log(input.length);
         input.after('\r\n');
-
         const btn = document.querySelector('button');
         btn.addEventListener('click', function(e){
             const id = btn.id;
