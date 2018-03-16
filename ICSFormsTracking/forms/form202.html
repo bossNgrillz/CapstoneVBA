@@ -1,65 +1,63 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS202</title>
-<link rel="stylesheet" type="text/css" href="css/202.css"/>
-<script src="f202.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/202.css"/>
 </head>
 <body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
-    <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS202" method="post">
-    <div id="pop1" class="pop-up"><!-- The pop-up block -->
-    <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
-    <div class="popScroll"><!-- Test for help starts here -->
-    <p> </p>
+        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS202" method="post">
+        <div id="pop1" class="pop-up"><!-- The pop-up block -->
+        <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
+        <div class="popScroll"><!-- Test for help starts here -->
+        <p> </p>
     <h2>ICS 202 Incident Objectives</h2>
     
     <p align="left"><strong>Purpose: </strong>
     <br />
-    <br />
-    The Incident Objectives (ICS202) describes the basic incident strategy,
-    incident objectives, command emphasis/priorities, and safety considerations for use
-    during the next operational period. <br />
+    The Incident Objectives (ICS202) describes the basic incident strategy, incident objectives,
+    command emphasis/priorities, and safety considerations for use during the next operational period. 
+		
+ <br />
     </p>
     <p align="left"> <strong>Preparation:</strong>
     <br />
     The ICS 202 is completed by the Planning Section following each Command and
     General Staff meeting conducted to prepare the Incident Action Plan (IAP).
     In case of a Unified Command, one Incident Commander (IC) may approve the ICS 202.
-    If additional IC signatures are used, attach a blank page.<br />
-    <br />
-    
+    If additional IC signatures are used, attach a blank page.    
     <br /> </p>
     <p align="left"><strong>Distribution:</strong>
     <br/>
-    <br/>
     The ICS 202 will be reproduced with the IAP and given to all supervisory
     personnel at the Section, Branch, Division Group, and Unit levels. All completed
-    original forms must be given to the Documentation Unit.<br/>
-    <br/>
+    original forms must be given to the Documentation Unit.
+
+<br/>
     
     </p>
     <p align="left"><strong>Notes:</strong><br />
-    <br />
-    The ICS 202 is a part of the IAP and can be used as the opening or cover page.<br/>
-    If additional pages are needed, use a blank ICS 202 and repaginate as needed. </p>
+    
+        The ICS 202 is a part of the IAP and can be used as the opening or cover page.<br/>
+        If additional pages are needed, use a blank ICS 202 and repaginate as needed. 
+   </p>
     </div>
     <!-- The close pop-up link correctly positioned at the end of the content block -->
-    <a href="#links" class="close"><span>Back
-    to links</span></a> </div>
+    <a href="#links" class="close"><span>Back to links</span></a> </div>
     </div>
-    <table style="width: 823px; height: 333px;" border="1" cellpadding="3" cellspacing="0">
-    <colgroup><col width="657" /></colgroup> <tbody>
-    <tr valign="top">
-    <td colspan="3" height="35">
-    <div style="background-color: rgb(204, 204, 204);" align="center"><span class="style6">&nbsp;
-    &nbsp; &nbsp; &nbsp; &nbsp;Incident Objectives (ICS 202)&nbsp; </span><span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span></div>
+    <table style="width: 750px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
+    <colgroup><col width="750px" /></colgroup> <tbody>
+    <tr>
+    <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
+    <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Incident Objectives (ICS 202)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+    <span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span>
     </td>
     </tr>
     <tr valign="middle">
-    <td style="height: 35px;" colspan="3" class="formtext">1. Incident Name: <input placeholder="Incident number is optional" maxlength="50" name="inc_name" id="inc_name" size="55" required="" />
+    <td style="height: 35px;" colspan="3" class="formtext"><strong>1. Incident Name: </strong><input maxlength="50" name="inc_name" id="inc_name" size="55" required="" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-    <td colspan="3" class="formtext" style="height: 35px;">2. Operational Period: <br/>
+    <td colspan="3" class="formtext" style="height: 35px;"><strong>2. Operational Period:</strong> <br/>
     Date From:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
     Date To:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
     Time From:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />
@@ -68,27 +66,27 @@
     </tr>
     
     <tr class="formtext">
-    <td colspan="3">3. Objectives:
+    <td colspan="3"><strong>3. Objectives:</strong>
     <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" placeholder="Enter objectives here" id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
     </td>
     </tr>
     <tr class="formtext">
-    <td colspan="3">4. Operational Period Command Emphasis:
+    <td colspan="3"><strong>4. Operational Period Command Emphasis:</strong>
     <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" placeholder="Enter command emphasis here" id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
     </td>
     </tr>
     <tr class="formtext">
-    <td colspan="3">General Situational Awareness:
+    <td colspan="3"><strong>General Situational Awareness:</strong>
     <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
     </td>
     </tr>
     <tr class="formtext">
-    <td colspan="3">5. Safety Plan Required? <form action=""> Yes <input type="checkbox" name="yes"> No<input type="checkbox" name="no"></form>
-    <p>Approved Site Safety Plan(s) Located at:</p>
+    <td colspan="3"><strong>5. Safety Plan Required?</strong> <form action=""> Yes <input type="checkbox" name="yes"> No<input type="checkbox" name="no"></form>
+    <p>Approved Site Safety Plan(s) Located at: <input type="text" name="approvedPlan" size="9"></p>
     </td> 
     </tr>
     <tr class="formtext">
-    <td colspan="3">6. Incident Action Plan (the items checked below are included in this Incident Action Plan):
+    <td colspan="3"><strong>6. Incident Action Plan (the items checked below are included in this Incident Action Plan):</strong>
     <br/>
     ICS 202<input type="checkbox" name="ICS202"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ICS 206<input type="checkbox" name="ICS206"/> 
     <br/>
@@ -108,11 +106,10 @@
     </td>
     </tr>
     <tr>
-    <td style="height: 35px;" colspan="3">&nbsp;
-        7. Prepared by: Name: <input type="text" name="pname"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Position Title: <input type="text" name="ptitle"/> <br/> Signature: <input type="text" name="sig"/> <br/>
-        8. Approved by Incident Commander:&nbsp; <input name="Approved_Name" id="Approved_Name" size="35" maxlength="30" required="" /> Name: <input type="text" name="ICname"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Signature: <input type="text" name="ICsig"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position
-    / Title: &nbsp;<input required="required" name="Approved_PosTitle" id="Approved_PosTitle" size="35" maxlength="30" /> <br />
+    <td style="height: 35px;" colspan="3">
+        <strong>7. Prepared by:&nbsp;</strong>Name: <input size="20" type="text" name="pname"/>&nbsp;&nbsp; Position Title: <input type="text" name="ptitle"/>&nbsp;&nbsp; Signature: <input type="text" name="sig"/> <br/>
+        <strong>8. Approved by Incident Commander:</strong>&nbsp; <input name="Approved_Name" id="Approved_Name" size="25" maxlength="30" required="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: <input type="text" name="ICname"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/> Signature: <input type="text" name="ICsig"/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position/Title: &nbsp;<input required="required" name="Approved_PosTitle" id="Approved_PosTitle" size="35" maxlength="30" /> <br />
     </td>
     </tr>
     <tr class="formtext">

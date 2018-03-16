@@ -1,0 +1,559 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS218</title>
+<link rel="stylesheet" type="text/css" href="../css/218.css"/>
+
+</head>
+<body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
+    <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS218" method="post">
+    <div id="pop1" class="pop-up"><!-- The pop-up block -->
+    <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
+    <div class="popScroll"><!-- Test for help starts here -->
+    <p> </p>
+    <h2>ICS 218 Support Vehicle/Equipment Inventory</h2>
+    
+    <p align="left"><strong>Purpose: </strong>
+    <br />
+    The Support Vehicle/Equipment Inventory (ICS 218) provides an inventory of all transportation and support vehicles and equipment assigned to the incident.
+    The information is used by the Ground Support Unit to maintain a record of the types and locations of vehicles and equipment on the incident.
+    The Resources Unit uses the information to initiate and maintain status/resource information.		
+ <br />
+    </p>
+    <p align="left"> <strong>Preparation:</strong>
+    <br />
+    The ICS 218 is prepared by Ground Support Unit personnel at intervals specified by the Ground Support Unit Leader.		
+    
+    <br /> </p>
+    <p align="left"><strong>Distribution:</strong>
+    <br/>
+    Initial inventory information recorded on the form should be given to the Resources Unit.
+    Subsequent changes to the status or location of transportation and support vehicles and equipment should be provided to the Resources Unit immediately.		
+<br/>
+    
+    </p>
+    <p align="left"><strong>Notes:</strong><br />
+    
+    If additional pages are needed, use a blank ICS 218 and repaginate as needed.<br/>
+   </p>
+    </div>
+    <!-- The close pop-up link correctly positioned at the end of the content block -->
+    <a href="#links" class="close"><span>Back to links</span></a> </div>
+    </div>
+    <table style="width: 951px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
+    <colgroup><col width="951px" /></colgroup> <tbody>
+    <tr>
+    <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
+    <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Support Vehicle/Equipment Inventory (ICS 218)&nbsp;&nbsp;&nbsp;&nbsp;Version 3.2.6X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+    <span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span>
+    </td>
+    </tr>
+    <tr>
+    <td style="vertical-align: top; text-align: left; width: 10%;">
+    <strong>1. Incident Name:</strong>
+    <p><b><input title="Incident name" required="required" id="Incident_Name" maxlength="25" name="Incident_Name" size="25" /> </b></p>
+    </td>
+    <td style="text-align: left; vertical-align: top; width: 10%;">
+    <strong>2. Incident Number:</strong>
+    <p><b><input title="Incident number" required="required" id="Incident_Number" maxlength="10" name="Incident_Name" size="15" /> </b></p>
+    </td>
+    <td style="vertical-align: top; text-align: left; width: 10%">
+    <strong>3. Date/Time Prepared:</strong><br/>
+    Date:&nbsp;<input title="Date" name="date" id="date" size="11" maxlength="12" /><br/>
+    Time:&nbsp;<input title="Time" name="time" id="time" size="11" maxlength="12" />
+    </td>
+    <td style="vertical-align: top; text-align: left; width: 15%;">
+    <strong>4. Vehicle/Equipment Category:</strong><br/>
+    <br/><input title="vehicle/equipment category" name="vehicleEquipmentCategory" id="vehicleEquipmentCategory" size="15" maxlength="17"/>
+    </td>    
+    <tr>
+    <td colspan="9" class="formtext" style="height: 35px; width: 900px;"><strong>5.Vehicle/Equipment Information:</strong></td>
+    <table style="height: 460px; width: 900px;" border="1" cellpadding="1" cellspacing="0">
+        <tbody>
+            <tr>
+            <td style="text-align: center;" class="zentriert" width="10%">Order Request Number</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Incident ID No.</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Vehicle or Equipment Classification</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Vehicle or Equipment Make</td>
+            <td style="text-align: center;" class="zentriert" width="8%">Category/Kind/Type, Capacity or Size</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Vehicle or Equipment Features</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Agency or Owner</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Operator Name or Contact</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Vehicle License or ID No.</td>
+            <td style="text-align: center;" class="zentriert" width="9%">Incident Assignment</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Incident Start Date and Time</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Incident Release Date and Time</td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start1">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release1">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment2">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start2">
+                </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="7" name="release2">
+                    </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start3">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release3">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start4">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release4">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start5">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release5">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start6">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release6">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start7">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release7">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start8">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release8">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start9">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release9">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start10">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release10">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start11">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release11">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="orderRequest12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="incidentNo12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="16" size="8" name="classification12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="make12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="15" name="category12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="features12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="agencyOwner12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="operator12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="license12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="6" name="assignment12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="start12">
+                </td>
+                <td style="text-align:justify;">
+                    <input maxlength="15" size="7" name="release12">
+                </td>
+            </tr>
+            <td colspan="12" class="formtext" style="height: 30px; width: 1035px;">ICS 218 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>6. Prepared by:</strong>&nbsp;<input maxlength="15" size="10" name="preparedBy">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Position/Title: &nbsp;<input maxlength="15" size="11" name="positionTitle">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Signature: &nbsp;<input maxlength="15" size="13" name="signature">
+            </td>
+        </tbody>
+    </table>
+    </tr>
+    
+    </tr>
+    </tbody>
+    </table>
+    </form>
+    </body>
+    </html>

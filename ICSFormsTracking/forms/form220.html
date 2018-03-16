@@ -1,0 +1,873 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Air Operations Summary(ICS220)</title>
+    <link rel="stylesheet" type="text/css" href="../css/220.css" />
+
+</head>
+
+<body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
+    <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS220" method="post">
+        <div id="pop1" class="pop-up">
+            <!-- The pop-up block -->
+            <div class="popBox">
+                <!-- If the content becomes larger than the pop-up this div will scroll the content -->
+                <div class="popScroll">
+                    <!-- Test for help starts here -->
+                    <p> </p>
+                    <h2>Air Operations Summary(ICS220)</h2>
+
+                    <p align="left">
+                        <strong>Purpose: </strong>
+                        <br />The Air Operations Summary (ICS 220) provides the Air Operations Branch with the number, type, location,
+                        and specific assignments of helicopters and air resources.
+
+                        <br />
+                    </p>
+                    <p align="left">
+                        <strong>Preparation:</strong>
+                        <br /> The ICS 220 is completed by the Operations Section Chief or the Air Operations Branch Director during
+                        each Planning Meeting. General air resources assignment information is obtained from the Operational
+                        Planning Worksheet (ICS 215), which also is completed during each Planning Meeting. Specific designators
+                        of the air resources assigned to the incident are provided by the Air and Fixed-Wing Support Groups.
+                        If aviation assets would be utilized for rescue or are referenced on the Medical Plan (ICS 206),
+                        coordinate with the Medical Unit Leader and indicate on the ICS 206.
+
+
+                        <br /> </p>
+                    <p align="left">
+                        <strong>Distribution:</strong>
+                        <br/> After the ICS 220 is completed by Air Operations personnel, the form is given to the Air Support
+                        Group Supervisor and Fixed-Wing Coordinator personnel. These personnel complete the form by indicating
+                        the designators of the helicopters and fixed-wing aircraft assigned missions during the specified
+                        operational period. This information is provided to Air Operations personnel who, in turn, give the
+                        information to the Resources Unit.
+
+                        <br/>
+
+                    </p>
+                    <p align="left">
+                        <strong>Notes:</strong>
+                        <br /> If additional pages are needed, use a blank ICS 220 and repaginate as needed.
+                        <br/>
+                    </p>
+                </div>
+                <!-- The close pop-up link correctly positioned at the end of the content block -->
+                <a href="#links" class="close">
+                    <span>Back to links</span>
+                </a>
+            </div>
+        </div>
+        <table style="width: 951px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
+            <colgroup>
+                <col width="951px" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
+                        <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Air Operations Summary(ICS220)&nbsp;&nbsp;&nbsp;&nbsp;Version
+                            3.2.6X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                        <span class="style6">
+                            <a href="#pop1" class="style25 style7">
+                                <span style="color: rgb(204, 0, 0);">Form Instructions</span>
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>1. Incident Name:</strong>
+                        <p>
+                            <b>
+                                <input title="Incident name" required="required" id="220Incident_Name" maxlength="25" name="220Incident_Name"
+                                    size="25" /> </b>
+                        </p>
+                    </td>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>2. Operational Period:</strong>
+                        <br/> Date From:&nbsp;&nbsp;
+                        <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="3"
+                            maxlength="12" onclick="SetDateTime('fulldate',this.id)" /> Date To:&nbsp;
+                        <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="3"
+                            maxlength="12" onclick="SetDateTime('fulldate',this.id)" /><br/> Time From:&nbsp;&nbsp;
+                        <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="3"
+                            maxlength="15" onclick="SetDateTime('hm',this.id)" /> Time To:&nbsp;
+                        <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="3"
+                            maxlength="15" onclick="SetDateTime('hm',this.id)" />
+                    </td>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>3. Sunrise: &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Sunset:</strong>
+                        <input title="sunrise" required="required" id="sunrise" maxlength="25" name="sunrise" size="10" /> &nbsp; &nbsp; &nbsp;
+                        <input title="sunset" required="required" id="sunset" maxlength="25" name="sunset" size="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>4. Remarks (safety notes, hazards, air operations special equipment, etc.):</strong>
+                        <p>
+                            <span class="western">
+                                <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" id="remarks"
+                                    rows="6" cols="45" name="Message"></textarea> </span>
+                        </p>
+                    </td>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>5. Ready Alert Aircraft:</strong>
+                        <br/>
+                        <br/> Medivac:
+                        <input title="medivac" required="required" id="medivac" maxlength="25" name="medivac" size="9"
+                        /><br/>
+                        <br/> New Incident:
+                        <input title="newIncident" required="required" id="newIncident" maxlength="25" name="newIncident"
+                            size="9" />
+                        <br/>
+                    </td>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                        <strong>6. Temporary Flight Restriction</strong>
+                        <br/>
+                        <br/> Number:&nbsp;&nbsp;
+                        <input title="tempNumber" required="required" id="tempNumber" maxlength="25" name="tempNumber" size="9" /><br/>
+                        <br/> Altitude: &nbsp;
+                        <input title="altitude" required="required" id="altitude" maxlength="25" name="altitude"
+                            size="9" /><br/>
+                        <br/> Center Point: &nbsp;
+                        <input title="centerPoint" required="required" id="centerPoint" maxlength="25"
+                            name="centerPoint" size="9" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <th style="text-align: center;" class="zentriert" width="10%">7. Personnel:</th>
+                                <th style="text-align: center;" class="zentriert" width="10%">Name: </th>
+                                <th style="text-align: center;" class="zentriert" width="10%">Phone Number:</th>
+                            </tr>
+                            <tr>
+                                <td>Air Operacions Branch Director:</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="name1" required="required" id="name1" maxlength="25"
+                                    name="name1" size="5" /></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="phoneNumber1" required="required" id="phoneNumber1" maxlength="25"
+                                    name="phoneNumber1" size="7" /></td>
+                            </tr>
+                            <tr>
+                                <td>Air Support Group Supervisor:</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="name2" required="required" id="name2" maxlength="25"
+                                    name="name2" size="5" /></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="phoneNumber2" required="required" id="phoneNumber2" maxlength="25"
+                                    name="phoneNumber2" size="7" /></td>
+                            </tr>
+                            <tr>
+                                <td>Air Tactical Group Supervisor:</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="name3" required="required" id="name3" maxlength="25"
+                                    name="name3" size="5" /></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="phoneNumber3" required="required" id="phoneNumber3" maxlength="25"
+                                        name="phoneNumber3" size="7" /></td>
+                            </tr>
+                            <tr>
+                                <td>Helicopter Coordinator:</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="name4" required="required" id="name4" maxlength="25"
+                                    name="name4" size="5" /></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="phoneNumber4" required="required" id="phoneNumber4" maxlength="25"
+                                        name="phoneNumber4" size="7" /></td>
+                            </tr>
+                            <tr>
+                                <td>Helibase Manager:</td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="name5" required="required" id="name5" maxlength="25"
+                                    name="name5" size="5" /></td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="phoneNumber5" required="required" id="phoneNumber5" maxlength="25"
+                                        name="phoneNumber5" size="7" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                            <table>
+                                <tr>
+                                    <th style="text-align: center;" class="zentriert" width="10%">8. Frequencies:</th>
+                                    <th style="text-align: center;" class="zentriert" width="10%">AM: </th>
+                                    <th style="text-align: center;" class="zentriert" width="10%">FM:</th>
+                                </tr>
+                                <tr>
+                                    <td>Air/Air Fixed-Wing:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am1" required="required" id="am1" maxlength="25"
+                                        name="am1" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm1" required="required" id="pm1" maxlength="25"
+                                        name="pm1" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Air/Air Rotary-Wing-Flight Following:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am2" required="required" id="am2" maxlength="25"
+                                        name="am2" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm2" required="required" id="pm2" maxlength="25"
+                                        name="pm2" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Air/Ground:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am3" required="required" id="am3" maxlength="25"
+                                        name="am3" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm3" required="required" id="pm3" maxlength="25"
+                                            name="pm3" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Command:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am4" required="required" id="am4" maxlength="25"
+                                        name="name2" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm4" required="required" id="pm4" maxlength="25"
+                                            name="pm4" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Deck Coordinator:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am5" required="required" id="am5" maxlength="25"
+                                        name="am5" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm5" required="required" id="pm5" maxlength="25"
+                                            name="pm5" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Take-Off & Landing Coordinator:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am6" required="required" id="am6" maxlength="25"
+                                        name="am5" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm6" required="required" id="pm6" maxlength="25"
+                                        name="pm6" size="5" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Air Guard:</td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="am7" required="required" id="am7" maxlength="25"
+                                        name="am7" size="5" /></td>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input title="pm7" required="required" id="pm7" maxlength="25"
+                                        name="pm7" size="5" /></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="vertical-align: top; text-align: left; width: 10%;">
+                                <strong>9. Fixed-Wing (category/kind/type, make/model, N#, base):</strong>
+                                <br/>
+                                <br/> Air Tactical Group Supervisor Aircraft:<br/>
+                                <input title="airTactical1" required="required" id="airTactical1" maxlength="25" name="airTactical1" size="12" />
+                                <br/><br/> Other Fixed-Wing Aircraft: <br/>
+                                <input title="otherFixedWing" required="required" id="otherFixedWing" maxlength="25" name="otherFixedWing"
+                                    size="12" />
+                               
+                            </td>
+                </tr>
+                <td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>10. helicopters(use additional sheets as necessary):</strong></td>
+                
+    <table style="height: 205px; width: 951px;" border="1" cellpadding="1" cellspacing="0">
+        <tbody>
+            <tr>
+                    <td style="text-align: center;" class="zentriert" width="10%">FAA N#</td>
+                    <td style="text-align: center;" class="zentriert" width="10%">Category/Kind/Type</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Make/Model</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Base</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Available</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Start</td>
+            <td style="text-align: center;" class="zentriert" width="10%">Remarks</td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start1">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks1">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start2">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks2">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start3">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks3">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start4">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks4">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start5">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks5">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start6">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks6">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="faan7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="category/kind/type7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="makeModel7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="base7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="available7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="start7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="9" name="remarks7">
+                </td>
+            </tr>
+</tbody>
+            </tbody>
+            <td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>11. Prepared By:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Name:&nbsp;<input maxlength="20" size="11" name="prepName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Title/Position:&nbsp;<input maxlength="20" size="11" name="titlePosition">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Signature:&nbsp;<input maxlength="20" size="11" name="signature">
+            </td>
+            <tr>
+                    <td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>ICS 220, Page 1</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            Date/Time:&nbsp;<input maxlength="15" size="10" name="page1Date">
+                        </td>
+            </tr>
+            
+        </table>
+    </form>
+
+    <form>
+<table style="width: 951px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
+        <colgroup>
+            <col width="951px" />
+        </colgroup>
+        <tbody>
+                <tr>
+                        <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
+                            <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Air Operations Summary(ICS220)&nbsp;&nbsp;&nbsp;&nbsp;Version
+                                3.2.6X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                            
+                        </td>
+                    </tr>
+            <tr>
+                    <td style="vertical-align: top; text-align: left; width: 10%;">
+                            <strong>1. Incident Name:</strong>
+                            <p>
+                                <b>
+                                    <input title="Incident name2" required="required" id="220Incident_Name2" maxlength="25" name="220Incident_Name2"
+                                        size="25" /> </b>
+                            </p>
+                        </td>
+                        <td style="vertical-align: top; text-align: left; width: 10%;">
+                            <strong>2. Operational Period:</strong>
+                            <br/> Date From:&nbsp;&nbsp;
+                            <input title="Click to change the date or overwrite" name="Mdate2" id="Mdate2" size="3"
+                                maxlength="12" onclick="SetDateTime('fulldate',this.id)" /> Date To:&nbsp;
+                            <input title="Click to change the date or overwrite" name="Mdate2" id="Mdate2" size="3"
+                                maxlength="12" onclick="SetDateTime('fulldate',this.id)" /><br/> Time From:&nbsp;&nbsp;
+                            <input title="Click to change the time or overwrite" name="Mtime2" id="Mtime2" size="3"
+                                maxlength="15" onclick="SetDateTime('hm',this.id)" /> Time To:&nbsp;
+                            <input title="Click to change the time or overwrite" name="Mtime2" id="Mtime2" size="3"
+                                maxlength="15" onclick="SetDateTime('hm',this.id)" />
+                        </td>
+                        <td style="vertical-align: top; text-align: left; width: 10%;">
+                            <strong>3. Sunrise: &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; Sunset:</strong><br/>
+                            <input title="sunrise2" required="required" id="sunrise2" maxlength="25" name="sunrise2" size="10" /> &nbsp; &nbsp; &nbsp;
+                            <input title="sunset2" required="required" id="sunset2" maxlength="25" name="sunset2" size="10" />
+                        </td>
+            <tr>
+                    <td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>12. Task/Mission/Assignment: (category/kind/type and function includes: air tactical, reconnaissance, personnel transport, search and rescue, etc.):</strong>
+            </tr>
+            <table style="height: 205px; width: 951px;" border="1" cellpadding="1" cellspacing="0">
+                    <tbody>
+                        <tr>
+                        <td style="text-align: center;" class="zentriert" width="10%">Category/Kind/Type and Function</td>
+                        <td style="text-align: center;" class="zentriert" width="10%">Name of Personnel or Cargo(if applicable) or Instructions for Tactical Aircraft</td>
+                        <td style="text-align: center;" class="zentriert" width="10%">Mission Start</td>
+                        <td style="text-align: center;" class="zentriert" width="10%">Fly From</td>
+                        <td style="text-align: center;" class="zentriert" width="10%">Fly To</td>
+                        </tr>
+                        <tr>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="categoryFunction1">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="15" name="namePersonnel1">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="mission1">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom1">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom1">
+                                </td>
+                                
+                        </tr>
+                        <tr>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="categoryFunction2">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="15" name="namePersonnel2">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="mission2">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom2">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom2">
+                                </td>
+                                
+                        </tr>
+                        <tr>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="categoryFunction3">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="15" name="namePersonnel3">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="mission3">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom3">
+                                </td>
+                                <td style="text-align:center;">
+                                    <input maxlength="15" size="12" name="flyFrom3">
+                                </td>
+                                
+                    </tr>
+                    <tr>
+                            <td style="text-align:center;">
+                                <input maxlength="15" size="12" name="categoryFunction4">
+                            </td>
+                            <td style="text-align:center;">
+                                <input maxlength="15" size="15" name="namePersonnel4">
+                            </td>
+                            <td style="text-align:center;">
+                                <input maxlength="15" size="12" name="mission4">
+                            </td>
+                            <td style="text-align:center;">
+                                <input maxlength="15" size="12" name="flyFrom4">
+                            </td>
+                            <td style="text-align:center;">
+                                <input maxlength="15" size="12" name="flyFrom4">
+                            </td>
+                            
+                </tr>
+                <tr>
+                        <td style="text-align:center;">
+                            <input maxlength="15" size="12" name="categoryFunction5">
+                        </td>
+                        <td style="text-align:center;">
+                            <input maxlength="15" size="15" name="namePersonnel5">
+                        </td>
+                        <td style="text-align:center;">
+                            <input maxlength="15" size="12" name="mission5">
+                        </td>
+                        <td style="text-align:center;">
+                            <input maxlength="15" size="12" name="flyFrom5">
+                        </td>
+                        <td style="text-align:center;">
+                            <input maxlength="15" size="12" name="flyFrom5">
+                        </td>
+                        
+            </tr>
+            <tr>
+                    <td style="text-align:center;">
+                        <input maxlength="15" size="12" name="categoryFunction6">
+                    </td>
+                    <td style="text-align:center;">
+                        <input maxlength="15" size="15" name="namePersonnel6">
+                    </td>
+                    <td style="text-align:center;">
+                        <input maxlength="15" size="12" name="mission6">
+                    </td>
+                    <td style="text-align:center;">
+                        <input maxlength="15" size="12" name="flyFrom6">
+                    </td>
+                    <td style="text-align:center;">
+                        <input maxlength="15" size="12" name="flyFrom6">
+                    </td>   
+        </tr>
+        <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="categoryFunction7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="namePersonnel7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="mission7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="flyFrom7">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="flyFrom7">
+                </td>
+        </tr>
+        <tr>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="categoryFunction8">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="15" name="namePersonnel8">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="mission8">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="flyFrom8">
+                </td>
+                <td style="text-align:center;">
+                    <input maxlength="15" size="12" name="flyFrom8">
+                </td>
+    </tr>
+    <tr>
+            <td style="text-align:center;">
+                <input maxlength="15" size="12" name="categoryFunction8">
+            </td>
+            <td style="text-align:center;">
+                <input maxlength="15" size="15" name="namePersonnel8">
+            </td>
+            <td style="text-align:center;">
+                <input maxlength="15" size="12" name="mission8">
+            </td>
+            <td style="text-align:center;">
+                <input maxlength="15" size="12" name="flyFrom8">
+            </td>
+            <td style="text-align:center;">
+                <input maxlength="15" size="12" name="flyFrom8">
+            </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction9">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel9">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission9">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom9">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom9">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction10">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel10">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission10">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom10">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom10">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction11">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel11">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission11">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom11">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom11">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction12">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel12">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission12">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom12">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom12">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction13">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel13">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission13">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom13">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom13">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction14">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel14">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission14">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom14">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom14">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction15">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel15">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission15">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom15">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom15">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction16">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel16">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission16">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom16">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom16">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction17">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel17">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission17">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom17">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom17">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction18">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel18">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission18">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom18">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom18">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction19">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel19">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission19">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom19">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom19">
+        </td>    
+</tr>
+<tr>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="categoryFunction20">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="15" name="namePersonnel20">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="mission20">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom20">
+        </td>
+        <td style="text-align:center;">
+            <input maxlength="15" size="12" name="flyFrom20">
+        </td>    
+</tr>
+<td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>13. Prepared By:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Name:&nbsp;<input maxlength="20" size="11" name="prepName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Title/Position:&nbsp;<input maxlength="20" size="11" name="titlePosition">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Signature:&nbsp;<input maxlength="20" size="11" name="signature">
+</td>
+<tr>
+        <td colspan="7" class="formtext" style="height: 35px; width: 800px;"><strong>ICS 220, Page 2</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Date/Time:&nbsp;<input maxlength="15" size="10" name="page1Date">
+            </td>
+</tr>
+            </tbody>
+            </table>
+            </tr>
+        </tbody>
+</table>
+    </form>
+</body>
+
+</html>
