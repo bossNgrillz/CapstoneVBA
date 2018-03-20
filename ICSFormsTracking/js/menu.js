@@ -10,6 +10,16 @@ $('#formsMenu').click(function(){
     GetForms();
 });
 
+$('#masterResrc').click(function(){
+    const formHtml = './masterresourcelist.html';
+    $('#content').load(formHtml);
+});
+
+$('#resrcTrack').click(function(){
+    const formHtml = './resourceTracking.html';
+    $('#content').load(formHtml);
+});
+
 $(document).on('click', '#formNum', function(){
     $('.formOptions').hide();
     $(this).next('.formOptions').show();
