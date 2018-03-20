@@ -70,6 +70,7 @@ ul{
     overflow: hidden;
     background-size: 200% auto;
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #85baff 100%);
+    transition: all 0.5s
 }
 
 #mainMenu > .btn{
@@ -80,19 +81,18 @@ ul{
     background-size: 200% auto;
     background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #85baff 100%);
     width: 200px;
-    transition: 0.4s;
+    transition: all 0.5s
 }
 
 #mainMenu > .btn:hover, #mainMenu > .btn:focus{
     box-shadow: none;
-    /* background-position: right center !important; */
 }
 
 #mainMenu > .btn span {
     white-space:normal !important;
     display: inline-block;
     position: relative;
-    transition: 0.4s;
+    transition: all 0.5s
 }
 
 #mainMenu > .btn span:after {
@@ -103,7 +103,7 @@ ul{
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.4s;
+    transition: all 0.5s
 }
 
 #mainMenu > .btn:hover span {
@@ -114,6 +114,11 @@ ul{
 #mainMenu > .btn:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+#mainMenu > .btn:active, #mainMenu > .btn:focus, #mainMenu > .active {
+    background-color:rgb(248, 249, 250) !important;
+    background-image: linear-gradient(to right, #f8f9fa 0%, #f8f9fa 51%, #f8f9fa 100%);
 }
 
 #mainMenu > button > i{
@@ -134,15 +139,12 @@ ul{
     max-width:200px;
 }
 
-.btn-light:hover, .btn-light:focus{
-    background-color: #c2e9fb !important;
-    border-bottom: 1px double black;
-}
-
 #menuExt{
+    left: 0px;
     width: 20%;
-    min-width: 150px;
-    max-width: 180px;
+    height: 100%;
+    min-width: 170px;
+    max-width: 170px;
 }
 
 #menuExt, .formOptions{
@@ -150,15 +152,18 @@ ul{
     display: none;
 }
 
-#content{
-    flex: 2;
-}
-
 #toggleExt{
-    width: 5px;
+    width: 20px;
+    height: 100%;
     background-color: #c2e9fb;
     overflow: hidden;
+    text-align: center;
     border-right: 1px solid black;
+}
+
+#toggleExt > i {
+    position:relative;
+    top: calc(20% - 10px);
 }
 
 .wrapper > div, .formBlock{
@@ -169,4 +174,18 @@ ul{
 .formBlock > button{
     border-radius: 0;
     border-bottom: 1px solid black !important;
+}
+
+.formBlock > .btn:hover{
+    background-color: #c2e9fb !important;
+    border-bottom: 1px double black;
+}
+
+.formBlock > .btn:active, .formBlock > .btn:focus, .formBlock > .active {
+    background-color: #85baff !important;
+    border-bottom: 1px double black;
+}
+
+#content{
+    flex: 2;
 }

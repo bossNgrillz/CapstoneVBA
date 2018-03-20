@@ -1,40 +1,9 @@
 body, td, th {
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 12px;
-    }
-    .zentriert {
-    font-size: 12px;
-    }
-    input, select {
-    padding: 1px;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 12px;
-    }
-    textarea {
-    margin: 10px;
-    padding: 10px;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 12px;
-    }
-    .rechtsbuendig {
-    font-size: 12px;
-    }
-    .SubmitBtn {
-    font-size: 12px;
-    }
-    .version {
-    margin: 5px;
-    color: #666666;
-    position: relative;
-    left: 2px;
-    top: 2px;
-    font-size: 12px;
     }
     #TextHeader {
     background-color: #dddddd;
-    font-size: 12px;
     }
-
 .pop-up {position:absolute; top:0; left:-500em;}
 .pop-up:target {position:static; left:0;}
 /* The pop-up itself */

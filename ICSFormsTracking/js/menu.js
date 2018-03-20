@@ -1,5 +1,11 @@
+$('.btn').click(function(e) {
+    $('.btn').not(this).removeClass('active');    
+    $(this).toggleClass('active');
+    e.preventDefault();
+})
+
 $('#toggleExt').click(function(){
-    $('#menuExt').toggle();
+    $("#menuExt").animate({ width: 'toggle', opacity: 'toggle' }, 'fast');
 });
 
 $('#mainMenu button').click(function(){
@@ -7,6 +13,7 @@ $('#mainMenu button').click(function(){
 });
 
 $('#formsMenu').click(function(){
+    $("#menuExt").animate({ width: 'toggle', opacity: 'toggle' }, 'slow');
     GetForms();
 });
 
@@ -38,6 +45,9 @@ $(document).on('click', '.formOptions button', function(){
         case 'Save':
             saveForm(formNumber);
             break;
+        case 'Open':
+            saveForm(formNumber);
+            break;
         default:
             alert("Something went wrong");
             break;
@@ -51,6 +61,13 @@ function newForm(formNumber){
 }
 
 function saveForm(formNumber){
+    const formHtml = './forms/form' + formNumber + '.html';
+    
+    let test = $('#content h2').text();
+    alert(test);
+}
+
+function openForm(formNumber){
     const formHtml = './forms/form' + formNumber + '.html';
     
     let test = $('#content h2').text();
@@ -116,10 +133,8 @@ function GetForms(){
     }
 
     $('#menuExt').html(list);
-    $('#menuExt').show();
 }
 
 function clearMenuExt(){
     $('#menuExt').html('');
 }
-
