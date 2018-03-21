@@ -12,6 +12,11 @@ $('#mainMenu button').click(function(){
     clearMenuExt();
 });
 
+$('#bHome').click(function(){
+    const formHtml = './indexStart.html';
+    $('#content').load(formHtml);
+});
+
 $('#formsMenu').click(function(){
     $("#menuExt").animate({ width: 'toggle', opacity: 'toggle' }, 'slow');
     GetForms();

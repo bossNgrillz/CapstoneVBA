@@ -65,7 +65,7 @@ ul{
 #mainMenu{
     padding: 0 !important;
     width: 10%;
-    min-width: 180px;
+    min-width: 200px;
     max-width: 200px;
     overflow: hidden;
     background-size: 200% auto;
