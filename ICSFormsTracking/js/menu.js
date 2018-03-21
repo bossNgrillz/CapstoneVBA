@@ -1,3 +1,6 @@
+const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
+let openedFile;
+
 $('.btn').click(function(e) {
     $('.btn').not(this).removeClass('active');    
     $(this).toggleClass('active');
@@ -35,6 +38,16 @@ $('#resrcTrack').click(function(){
 $(document).on('click', '#formNum', function(){
     $('.formOptions').hide();
     $(this).next('.formOptions').show();
+    const buttonClicked = $(this).text().trim();
+    const formNumber = $(this).parent().find('#formNum').text();
+
+    const formHtml = './forms/form' + formNumber + '.html';
+    
+    if(formNumber == undefined) {
+        $('#content').empty();
+    } else {
+        $('#content').load(formHtml);
+    }
 });
 
 $(document).on('click', '.formOptions button', function(){
@@ -52,6 +65,9 @@ $(document).on('click', '.formOptions button', function(){
         case 'Open':
             openForm();
             break;
+        case 'Delete':
+            delForm(openedFile);
+            break;
         default:
             alert("Something went wrong");
             break;
@@ -66,12 +82,44 @@ function newForm(formNumber){
 
 function saveForm(formNumber){
     const formHtml = './forms/form' + formNumber + '.html';
+    let content = document.getElementById('content').outerHTML;
+
+    // if($('#content').value !== undefined) {
+    //     dialog.showSaveDialog({
+    //         filters: [
     
-    let test = $('#content h2').text();
-    alert(test);
+    //         { name: 'HTML Documents', extensions: ['htm', 'html'] },
+    //         { name: 'All Files', extensions: ['*'] }
+       
+    //         ]}, function (formHtml) {
+       
+    //             if (formHtml === undefined) return;
+       
+    //             fs.writeFile(formHtml, content, function (err) {   
+                    
+    //             });
+    //     });
+    // } else {
+    //     alert('Please open a form to save.');
+    // }
+
+    dialog.showSaveDialog((fileName) => {
+        if (fileName === undefined){
+            console.log("You didn't save the file");
+            return;
+        }
+    
+        // fileName is a string that contains the path and filename created in the save file dialog.  
+        fs.writeFile(fileName, content, (err) => {
+            if(err){
+                alert("An error ocurred creating the file "+ err.message)
+            }
+                        
+            alert("The file has been succesfully saved");
+        });
+    }); 
 }
 
-const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
 function openForm(){
     dialog.showOpenDialog({
         filters: [
@@ -83,12 +131,12 @@ function openForm(){
      
             if (fileNames === undefined) return;
      
-            var fileName = fileNames[0];
+            let fileName = fileNames[0];
      
             fs.readFile(fileName, 'utf-8', function (err, data) {
      
                 $('#content').load(fileName);
-     
+                openedFile = fileName;
             });
     });
     // dialog.showOpenDialog((fileNames) => {
@@ -108,6 +156,21 @@ function openForm(){
     //         console.log("The file content is : " + data);
     //     });
     // });
+}
+
+function delForm(openedFile) {
+    if (fs.existsSync(openedFile)) {
+        fs.unlink(openedFile, (err) => {
+            if (err) {
+                alert("An error ocurred updating the file" + err.message);
+                console.log(err);
+                return;
+            }
+            console.log("File succesfully deleted");
+        });
+    } else {
+        alert("This file doesn't exist, failed to delete.");
+    }
 }
 
 function GetForms(){
