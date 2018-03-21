@@ -42,7 +42,6 @@ $(document).on('click', '.formOptions button', function(){
     const formNumber = $(this).parent().parent().find('#formNum').text();
 
     //console.log(buttonClicked);
-
     switch(buttonClicked) {
         case 'New':
             newForm(formNumber);
@@ -51,7 +50,7 @@ $(document).on('click', '.formOptions button', function(){
             saveForm(formNumber);
             break;
         case 'Open':
-            saveForm(formNumber);
+            openForm();
             break;
         default:
             alert("Something went wrong");
@@ -72,11 +71,43 @@ function saveForm(formNumber){
     alert(test);
 }
 
-function openForm(formNumber){
-    const formHtml = './forms/form' + formNumber + '.html';
+const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
+function openForm(){
+    dialog.showOpenDialog({
+        filters: [
+
+        { name: 'HTML Documents', extensions: ['htm', 'html'] },
+        {name: 'All Files', extensions: ['*']}
+     
+        ]}, function (fileNames) {
+     
+            if (fileNames === undefined) return;
+     
+            var fileName = fileNames[0];
+     
+            fs.readFile(fileName, 'utf-8', function (err, data) {
+     
+                $('#content').load(fileName);
+     
+            });
+    });
+    // dialog.showOpenDialog((fileNames) => {
+    //     // fileNames is an array that contains all the selected
+    //     if(fileNames === undefined){
+    //         console.log("No file selected");
+    //         return;
+    //     }
     
-    let test = $('#content h2').text();
-    alert(test);
+    //     fs.readFile(fileNames[0], 'utf-8', (err, data) => {
+    //         if(err){
+    //             alert("An error ocurred reading the file :" + err.message);
+    //             return;
+    //         }
+    
+    //         // Change how to handle the file content
+    //         console.log("The file content is : " + data);
+    //     });
+    // });
 }
 
 function GetForms(){
@@ -130,7 +161,7 @@ function GetForms(){
         list += '<div class="formOptions">' + 
         '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-file"></i> New</button>' +
         '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-save"></i> Save</button>' +
-        '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="far fa-folder-open"></i> Open</button>' +
+        '<button type="button" class="btn btn-light btn-block text-left" id="btnOpen"><i class="far fa-folder-open"></i> Open</button>' +
         '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-share-square"></i> Export</button>' +
         '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-print"></i> Print</button>' +
         '<button type="button" class="btn btn-light btn-block text-left" id=""><i class="fas fa-trash-alt"></i> Delete</button>';
