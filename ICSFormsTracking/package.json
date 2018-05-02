@@ -14,5 +14,8 @@
     "electron-save-file": "^1.0.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
+  },
+  "devDependencies": {
+    "electron-packager": "^12.0.1"
   }
 }
