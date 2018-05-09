@@ -2,10 +2,20 @@ body, td, th {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 16px;
     font-weight: inherit;
-    }
+}
+th.rotate {
+    vertical-align: bottom;
+    font-weight: bold;
+}
+th.rotate span {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);    
+}
 .zentriert {
     font-size: 12px;
-    }
+}
 input, select {
     padding: 2px;
     -moz-border-radius-topleft: 2px;
@@ -14,7 +24,7 @@ input, select {
     -moz-border-radius-bottomleft: 2px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
-    }
+}
 textarea {
     padding: 2px;
     -moz-border-radius-topleft: 2px;
@@ -23,8 +33,9 @@ textarea {
     -moz-border-radius-bottomleft: 2px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
-    }
-    
+    height: 99%;
+    width: 99%;
+} 
 .rechtsbuendig {
     font-size: 12px;
     }
