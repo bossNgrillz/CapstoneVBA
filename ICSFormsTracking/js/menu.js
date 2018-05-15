@@ -1,5 +1,6 @@
 const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
 let openedFile;
+const os = require('os'); 
 
 $('.btn').click(function(e) {
     $('.btn').not(this).removeClass('active');    
@@ -58,7 +59,7 @@ $(document).on('click', '.formOptions button', function(e){
         if (element.type === "text" && element.value === "")
             console.log("Field Is Empty")
             else 
-                content += element.name + ": " + element.value + ",";
+                content += element.name + ": " + element.value + "," + os.EOL;
     }
     content += "}";
     const buttonClicked = $(this).text().trim();
