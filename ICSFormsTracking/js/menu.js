@@ -50,7 +50,17 @@ $(document).on('click', '#formNum', function(){
     }
 });
 
-$(document).on('click', '.formOptions button', function(){
+$(document).on('click', '.formOptions button', function(e){
+    e.preventDefault();
+    let elements = document.getElementById('formy').elements;
+    let content ="{";
+    for (let i = 0, element; element = elements[i++];) {
+        if (element.type === "text" && element.value === "")
+            console.log("Field Is Empty")
+            else 
+                content += element.name + ": " + element.value + ",";
+    }
+    content += "}";
     const buttonClicked = $(this).text().trim();
     const formNumber = $(this).parent().parent().find('#formNum').text();
 
@@ -60,7 +70,7 @@ $(document).on('click', '.formOptions button', function(){
             newForm(formNumber);
             break;
         case 'Save':
-            saveForm(formNumber);
+            saveForm(formNumber, content);
             break;
         case 'Open':
             openForm();
@@ -80,9 +90,9 @@ function newForm(formNumber){
     $('#content').load(formHtml);
 }
 
-function saveForm(formNumber){
+function saveForm(formNumber, content){
     const formHtml = './forms/form' + formNumber + '.html';
-    let content = document.getElementById('content').outerHTML;
+    // let content = document.getElementById('content').outerHTML;
 
     // if($('#content').value !== undefined) {
     //     dialog.showSaveDialog({
