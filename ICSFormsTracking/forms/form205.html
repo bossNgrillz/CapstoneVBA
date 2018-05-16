@@ -1,240 +1,242 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>ICS 205</title>
-    <link rel="stylesheet" type="text/css" href="./css/205.css" />
-</head>
-<body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS 205</title>  
+        <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
+    </head>
+    <body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
     <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS205" method="post">
-        <div id="pop1" class="pop-up">
-            <!-- The pop-up block -->
-            <div class="popBox">
-                <!-- If the content becomes larger than the pop-up this div will scroll the content -->
-                <div class="popScroll">
-                    <!-- Test for help starts here -->
-                    <p> </p>
-                    <h2>INCIDENT RADIO COMMUNICATIONS PLAN (ICS 205)</h2>
-                <!-- The close pop-up link correctly positioned at the end of the content block -->
-                <a href="#links" class="close">
-                    <span>
-                        Forms Menu
-                    </span>
-                </a>
-            </div>
+        <div id="pop1" class="pop-up"><!-- The pop-up block -->
+        <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
+        <div class="popScroll"><!-- Test for help starts here -->
+            <h2><strong>ICS 205 Incident Radio Communications Plan</strong></h2>
+            <p align="left"><strong>Purpose.</strong><br>
+            The Incident Radio Communications Plan (ICS 205) provides information on all radio frequency or trunked radio system talkgroup assignments for each operational period.  The plan is a summary of information obtained about available radio frequencies or talkgroups and the assignments of those resources by the Communications Unit Leader for use by incident responders.  Information from the Incident Radio Communications Plan on frequency or talkgroup assignments is normally placed on the Assignment List (ICS 204).
+            </p>
+            <p align="left"><strong>Preparation.</strong><br>
+            The ICS 205 is prepared by the Communications Unit Leader and given to the Planning Section Chief for inclusion in the Incident Action Plan.
+            </p>
+            <p align="left"><strong>Distribution.</strong><br>
+            The ICS 206 is duplicated and attached to the Incident Objectives (ICS 202) and given to all recipients as part of the Incident Action Plan (IAP). Information from the plan pertaining
+            to incident medical aid stations and medical emergency procedures may be noted on the Assignment List (ICS 204). All completed original forms must be given to the Documentation Unit.
+            </p>
+            <p align="left"><strong>Notes:</strong><br>
+            The ICS 206 serves as part of the IAP. This form can include multiple pages.
+            </p>
+            <table class="instrTable">
+                <tbody>
+                    <tr class="instrTopTr">
+                        <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+                        <td colspan="3" width="30%"><strong>Block Title</strong></td>
+                        <td colspan="9"><strong>Instructions</strong></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <table style="width: 1009px; height: 100%;" border="1" cellpadding="3" cellspacing="0">
-            <colgroup><col width="657" /></colgroup>
-            <tbody>
+        <!-- The close pop-up link correctly positioned at the end of the content block -->
+        <a href="#links" class="close"><span>Back to links</span></a>
+        </div>
+        </div>
+        <table border="1" cellpadding="3" cellspacing="0">
+                <tbody>
                 <tr valign="top">
-                    <td colspan="1" height="1">
-                        <div style="background-color: rgb(204, 204, 204);" align="center">
-                            <span class="style6">
-                                Incident Plan Summary 
-                            </span><span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">205 Instructions</span></a></span>
+                    <td colspan="11">
+                        <div class="formHeader">Incident Radio Communications Plan (ICS 205)
+                            <a href="#pop1" class="instrhref">205 Instructions</a>
                         </div>
                     </td>
                 </tr>
                 <tr valign="middle">
-                    <td style="height: 5px;" colspan="3" class="formtext">
-                        1. Incident Name: <input placeholder="Incident number is optional" maxlength="50" name="inc_name" id="inc_name" size="55" required="" />
+                    <td style="height: 5px;" colspan="11" class="formtext">
+                        <strong>1. Incident Name:</strong> <input placeholder="Incident number is optional" maxlength="50" name="inc_name" id="inc_name" size="55" required="" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="formtext" style="height: 5px;">
-                        2. Date/Time Prepared: <br />
+                    <td colspan="11" class="formtext" style="height: 5px;">
+                        <strong>2. Date/Time Prepared:</strong><br />
                         Date:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
                         Time:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="formtext" style="height: 35px;">
-                        3. Operational Period: <br />
+                    <td colspan="11" class="formtext" style="height: 35px;">
+                        <strong>3. Operational Period:</strong><br />
                         Date From:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
                         Date To:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
                         Time From:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />
                         Time To:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />
                     </td>
                 </tr>
-                <td colspan="9" class="formtext" style="height: 35px; width: 1009px;"><strong>4. Basic Radio Channel Use:</strong></td>
-                <table style="width: 1009px; height: 100%" border="1" cellpadding="1" cellspacing="0">
-                    <tbody>
-                        <tr>
-                        <td style="text-align: center;" class="zentriert" width="10%">Zone Grp.</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">Ch #</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">Function</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">Name/Trunked Radio<br>System Talkgroup</td>
-                        <td style="text-align: center;" class="zentriert" width="8%">Assignment<br>(Div/Group/etc.)</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">RX Freq   N or W</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">RX<br>Tone/NAC</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">TX Freq   N or W</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">TX<br>Tone/NAC</td>
-                        <td style="text-align: center;" class="zentriert" width="9%">Mode<br>(A, D, or M)</td>
-                        <td style="text-align: center;" class="zentriert" width="10%">Remarks</td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                            <td style="text-align:justify;">
-                                <input maxlength="15" size="6" name="">
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <table style="width: 1009px; height: 100%;" border="1" cellpadding="3" cellspacing="0">
-                        <tbody>
-                    <tr class="formtext">
-                        <td colspan="3"><strong>5. Special Instructions:</strong>
-                        <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" placeholder="*****For medical emergencies tune your radio to EMS Group ( RX-700.0005 N, TX-700.010 N) and call for ambulance." id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
-                        </td>
-                    </tr>
+                <td colspan="11" class="formtext" style="height: 35px; width: 1009px;"><strong>4. Basic Radio Channel Use:</strong></td>
                 <tr>
-                    <td style="height: 35px;" colspan="3">
-                        &nbsp;
-                        6. Prepared by: Name: <input type="text" name="pname" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature: <input type="text" name="sig" />
+                <td style="text-align: center;" class="zentriert" width="10%">Zone Grp.</td>
+                <td style="text-align: center;" class="zentriert" width="10%">Ch #</td>
+                <td style="text-align: center;" class="zentriert" width="10%">Function</td>
+                <td style="text-align: center;" class="zentriert" width="10%">Name/Trunked Radio<br>System Talkgroup</td>
+                <td style="text-align: center;" class="zentriert" width="8%">Assignment<br>(Div/Group/etc.)</td>
+                <td style="text-align: center;" class="zentriert" width="10%">RX Freq   N or W</td>
+                <td style="text-align: center;" class="zentriert" width="10%">RX<br>Tone/NAC</td>
+                <td style="text-align: center;" class="zentriert" width="10%">TX Freq   N or W</td>
+                <td style="text-align: center;" class="zentriert" width="10%">TX<br>Tone/NAC</td>
+                <td style="text-align: center;" class="zentriert" width="9%">Mode<br>(A, D, or M)</td>
+                <td style="text-align: center;" class="zentriert" width="10%">Remarks</td>
+                </tr>
+                <tr>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
+                    </td>
+                    <td style="text-align:justify;">
+                        <input maxlength="15" size="6" name="">
                     </td>
                 </tr>
                 <tr class="formtext">
-                    <td colspan="1">
-                        ICS 208 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAP Page <input type="text" name="iap" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date/Time <input type="text" name="dateTime" />
+                    <td colspan="11"><strong>5. Special Instructions:</strong>
+                    <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" placeholder="*****For medical emergencies tune your radio to EMS Group ( RX-700.0005 N, TX-700.010 N) and call for ambulance." id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 35px;" colspan="11">
+                        <strong>6. Prepared by:</strong> Name:<input type="text" name="pname" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Signature:</strong> <input type="text" name="sig" />
+                    </td>
+                </tr>
+                <tr class="formtext">
+                    <td colspan="11">
+                        <strong>ICS 208</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>IAP Page</strong><input type="text" name="iap" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date/Time <input type="text" name="dateTime" />
                     </td>
                 </tr>
             </tbody>
-        </tbody>
         </table>
-    </table>
     </form>
 </body>
 </html>

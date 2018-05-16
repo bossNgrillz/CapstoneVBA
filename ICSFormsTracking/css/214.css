@@ -1,55 +1,51 @@
 body, td, th {
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 16px;
-    font-weight: inherit;
-    }
-.zentriert {
     font-size: 12px;
     }
-input, select {
-    padding: 2px;
-    -moz-border-radius-topleft: 2px;
-    -moz-border-radius-topright: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
+    .zentriert {
+    font-size: 12px;
+    }
+    input, select {
+    padding: 1px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-topright: 1px;
+    -moz-border-radius-bottomright: 1px;
+    -moz-border-radius-bottomleft: 1px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
     }
-textarea {
-    padding: 2px;
-    -moz-border-radius-topleft: 2px;
-    -moz-border-radius-topright: 2px;
-    -moz-border-radius-bottomright: 2px;
-    -moz-border-radius-bottomleft: 2px;
+    textarea {
+    margin: 8px;
+    padding: 8px;
+    -moz-border-radius-topleft: 1px;
+    -moz-border-radius-topright: 1px;
+    -moz-border-radius-bottomright: 1px;
+    -moz-border-radius-bottomleft: 1px;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
     }
-    
-.rechtsbuendig {
+    .rechtsbuendig {
     font-size: 12px;
     }
-.SubmitBtn {
+    .SubmitBtn {
     font-size: 12px;
     }
-.version {
+    .version {
+    margin: 5px;
     color: #666666;
     position: relative;
-    left: 2px;
-    top: 2px;
+    left: 0px;
+    top: 3px;
     font-size: 12px;
-    } 
-body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
-    h2 {margin-top:0}
-    
-    /* Styling applied to classes only */
-    /* Pop-up content shifted off-screen when not in view.
-    Still readable by screen-reader software.
-    When targeted it fills the browser window.
-    */
-.pop-up {position:absolute; top:0; left:-500em;}
+    }
+    #TextHeader {
+    background-color: #dddddd;
+    font-size: 12px;
+    }
+    .pop-up {position:absolute; top:0; left:-500em;}
     .pop-up:target {position:static; left:0;}
     /* The pop-up itself */
-.popBox {
+    .popBox {
     background:#ffffff;
     /* alternatively fixed width / height and negative margins from 50% */
     position:absolute; left:30%; right:30%; top:30%; bottom:30%;
@@ -61,10 +57,9 @@ body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
     opacity:0;
     transition: opacity 0.8s ease-out;
     }
-    
-:target .popBox {position:fixed; opacity:1;}
+    :target .popBox {position:fixed; opacity:1;}
     /* Light box properties */
-.lightbox {
+    .lightbox {
     display:none;
     text-indent:-200em;
     background-color:rgba(0,0,0,.4);
@@ -77,9 +72,10 @@ body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
     right:0;
     z-index:5;
     }
-:target .lightbox {display:block;}
+    :target .lightbox {display:block;}
     /* The pop-ups close link, moved via CSS to the top right of the pop-up */
-.close:link, .close:visited {
+    .close:link,
+    .close:visited {
     position: absolute;
     top: -0.75em;
     right: -0.75em;
@@ -96,20 +92,20 @@ body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
     border-radius: 50%;
     box-shadow: 0 0 .5rem .5rem rba(0,0,0,.5);
     }
-.close:before {content:"X";}
-.close:hover,
-.close:active,
-.close:focus {
+    .close:before {content:"X";}
+    .close:hover,
+    .close:active,
+    .close:focus {
     box-shadow: 0 0 .5rem .5rem rba(255,0,0,.5);
     background-color: #c00;
     color: #fff;
     }
-.close span {
+    .close span {
     text-indent: -200em;
     display: block;
     }
     /* The pop-up content div will scroll if it has too much content */
-.popScroll {
+    .popScroll {
     position:absolute;
     top: 1rem;
     left: 1rem;
@@ -119,4 +115,4 @@ body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
     *overflow-y: scroll;
     padding-right: 0.5em;
     }
-.popScroll h2 {margin-top:0}
+    .popScroll h2 {margin-top:0}

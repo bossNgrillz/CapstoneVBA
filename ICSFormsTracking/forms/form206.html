@@ -1,52 +1,56 @@
 <html>
     <head>
-    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type"><title>ICS206 Medical Plan</title>  
-    <link rel="stylesheet" type="text/css" href="./css/206.css"/>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type"><title>ICS 206</title>  
+    <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
 </head>
 <body pbzloc="9">
-<form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS206" method="post" pbzloc="0" style="font-family: Arial Black;">
+        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS206" method="post">
 <div id="pop1" class="pop-up"><!-- The pop-up block -->
 <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
 <div class="popScroll"><!-- Test for help starts here -->
-<p> </p>
-
 <h2>ICS 206 Medical Plan</h2>
-<p align="left">Purpose.<br>
+<p align="left"><strong>Purpose.</strong><br>
 <br>
 The Medical Plan (ICS 206) provides information on incident medical aid stations, transportation services, hospitals, and medical emergency procedures.
 <br>
 </p>
-<p align="left">Preparation.<br>
+<p align="left"><strong>Preparation.</strong><br>
 <br>
 The ICS 206 is prepared by the Medical Unit Leader and reviewed by the Safety Officer to ensure ICS coordination. If aviation assets are utilized for rescue, coordinate with Air Operations.
 </p>
-<p align="left"> Distribution.<br>
+<p align="left"><strong>Distribution.</strong><br>
 <br>
 The ICS 206 is duplicated and attached to the Incident Objectives (ICS 202) and given to all recipients as part of the Incident Action Plan (IAP). Information from the plan pertaining
 to incident medical aid stations and medical emergency procedures may be noted on the Assignment List (ICS 204). All completed original forms must be given to the Documentation Unit.
 </p>
-<p align="left">Notes:<br>
-<br>
+<p align="left"><strong>Notes:</strong><br>
 The ICS 206 serves as part of the IAP. This form can include multiple pages.
 </p>
+<table class="instrTable">
+    <tbody>
+        <tr class="instrTopTr">
+            <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+            <td colspan="3" width="30%"><strong>Block Title</strong></td>
+            <td colspan="9"><strong>Instructions</strong></td>
+        </tr>
+    </tbody>
+</table>
 </div>
-
 <!-- The close pop-up link correctly positioned at the end of the content block -->
 <a href="#links" class="close"><span>Back to links</span></a> </div>
 </div>
-<table style="width: 1011px; height: 1522px;" border="1" cellpadding="3" cellspacing="3">
+<table colspan="5" border="1" cellpadding="3" cellspacing="0">
 <tbody>
-<tr pbzloc="9">
-    <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
-        <span class="style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Medical Plan &nbsp;&nbsp; &nbsp;&nbsp;ICS 206 Vers10&nbsp;&nbsp; &nbsp;&nbsp;</span>
-        <span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span>
-        </td>
+<tr valign="top">
+    <td colspan="5">
+        <div class="formHeader">Medical Plan (ICS 206)
+            <a href="#pop1" class="instrhref">206 Instructions</a>
+        </div>
+    </td>
 </tr>
 <tr>
-<td style="text-align: center;" colspan="5"><br>
+<td style="text-align: center;" colspan="5">
 <strong>1. Incident Name:</strong> <input title="Incident number optional" maxlength="45" name="Incident_Name" required="required" size="50"> &nbsp;<br>
-<br>
 <strong>2. Operational Period:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     Date From:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
     &nbsp;&nbsp;&nbsp;Date To:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
@@ -154,14 +158,13 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <select multiple="multiple" name="Amb_Line5" pbzloc="29" size="2"><option value="ALS">ALS</option><option value="BLS">BLS</option><option selected="selected" value="--">--</option></select>
 </td>
 </tr>
-
-<td colspan="7" style="text-align: center; background-color: rgb(204, 204, 204);"><span style="color: black;">&nbsp;</span><strong>5. Hospitals</strong>&nbsp;&nbsp;<b></b></td>
+<tr>
+<td colspan="5" style="text-align: center; background-color: rgb(204, 204, 204);"><span style="color: black;">&nbsp;</span><strong>5. Hospitals</strong>&nbsp;&nbsp;<b></b></td>
 </tr>
 <tr>
-<td colspan="7" pbzloc="214">
-<table colspan="7" pbzloc="295" style="width: 1027px; height: 416px;" border="1" cellpadding="1" cellspacing="1">
+<table colspan="5" pbzloc="295" border="1" cellpadding="1" cellspacing="1">
 <tbody>
-<tr colspan="7">
+<tr colspan="5">
 <td style="text-align: center; background-color: rgb(204, 204, 204);" pbzloc="17">Hospital Name</td>
 <td style="text-align: center; background-color: rgb(204, 204, 204);">Address, Latitude & Longitude if Helipad</td>
 <td style="text-align: center; background-color: rgb(204, 204, 204);">Contact Number(s)/Frequency</td>
@@ -169,7 +172,6 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; background-color: rgb(204, 204, 204);">Trauma Center</td>
 <td style="text-align: center; background-color: rgb(204, 204, 204);" pbzloc="265">&nbsp;Burn Center</td>
 <td style="text-align: center; background-color: rgb(204, 204, 204);">Helipad</td>
-
 </tr>
 <tr>
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="289"><input maxlength="30" name="Hosp_Name1" size="30" type="text"></td>
@@ -188,7 +190,6 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
     <select multiple="multiple" name="helipad1" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
     </td>
-</tr>
 <tr>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="289"><input maxlength="30" name="Hosp_Name2" size="30" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad2" size="40" type="text"></td>
@@ -268,16 +269,16 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
     </td>
     </tr>
 <tr>
-<td style="text-align: justify;" colspan="7" pbzloc="64"><span style="font-size: 14px;"></span>
-&nbsp; <span style="font-size: 14px;">&nbsp;<strong>7. Prepared by (MUL)</strong>:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Name&nbsp;<input maxlength="25" name="Prepared_By" required="required" size="20"><span style="font-size: 12px;">&nbsp;<big pbzloc="58"></big></span>
+<td style="text-align: justify;" colspan="7" pbzloc="64">
+<strong>7. Prepared by (MUL)</strong>:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Name&nbsp;<input maxlength="25" name="Prepared_By" required="required" size="20"><span style="font-size: 12px;">&nbsp;<big pbzloc="58"></big></span>
 Signature
 </big></span><input maxlength="25" name="Review_By" required="required" size="30"><br>
 <span style="font-size: 12px;"><big pbzloc="58"><br>
 </big></span></td>
 </tr>
 <tr>
-    <td style="text-align: justify;" colspan="7" pbzloc="64"><span style="font-size: 14px;"></span>
-    &nbsp; <span style="font-size: 14px;">&nbsp;<strong>8. Approved by (Safety Officer):</strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Name&nbsp;<input maxlength="25" name="Prepared_By" required="required" size="20"><span style="font-size: 12px;">&nbsp;<big pbzloc="58"></big></span>
+    <td style="text-align: justify;" colspan="7" pbzloc="64">
+    <strong>8. Approved by (Safety Officer):</strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Name&nbsp;<input maxlength="25" name="Prepared_By" required="required" size="20"><span style="font-size: 12px;">&nbsp;<big pbzloc="58"></big></span>
     Signature
     </big></span><input maxlength="25" name="Review_By" required="required" size="30"><br>
     <span style="font-size: 12px;"><big pbzloc="58"><br>
@@ -285,7 +286,7 @@ Signature
     </tr>
 <tr>
     <td style="text-align: justify;" colspan="7" pbzloc="64"><span style="font-size: 14px;"></span>
-        ICS 206&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; IAP Page <input maxlength="10" name="iap" size="2" type="text">
+        <strong>ICS 206</strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <strong>IAP Page</strong> <input maxlength="10" name="iap" size="2" type="text">
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Date/Time:&nbsp;&nbsp;<input style="color: rgb(204, 0, 0);" required="required" name="DateTime" maxlength="23" id="DateTime1" size="24" onclick="TimeNow('ActivityDateTime1', 'Activities1')"><br>
 <br> 
     </td>

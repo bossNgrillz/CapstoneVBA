@@ -1,24 +1,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS202</title>
-<link rel="stylesheet" type="text/css" href="./css/202.css"/>
+<link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
 </head>
 <body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
         <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS202" method="post">
         <div id="pop1" class="pop-up"><!-- The pop-up block -->
         <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
         <div class="popScroll"><!-- Test for help starts here -->
-
     <h2>ICS 202 Incident Objectives</h2>
-    
     <p align="left"><strong>Purpose: </strong>
     <br />
     The Incident Objectives (ICS202) describes the basic incident strategy, incident objectives,
     command emphasis/priorities, and safety considerations for use during the next operational period. 
-		
- <br />
+    <br />
     </p>
-    <p align="left"> <strong>Preparation:</strong>
+    <p align="left"><strong>Preparation:</strong>
     <br />
     The ICS 202 is completed by the Planning Section following each Command and
     General Staff meeting conducted to prepare the Incident Action Plan (IAP).
@@ -30,28 +27,34 @@
     The ICS 202 will be reproduced with the IAP and given to all supervisory
     personnel at the Section, Branch, Division Group, and Unit levels. All completed
     original forms must be given to the Documentation Unit.
-
-<br/>
-    
+    <br/>
     </p>
     <p align="left"><strong>Notes:</strong><br />
-    
         The ICS 202 is a part of the IAP and can be used as the opening or cover page.<br/>
         If additional pages are needed, use a blank ICS 202 and repaginate as needed. 
-   </p>
+    </p>
+    <table class="instrTable">
+        <tbody>
+            <tr class="instrTopTr">
+                <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+                <td colspan="3" width="30%"><strong>Block Title</strong></td>
+                <td colspan="9"><strong>Instructions</strong></td>
+            </tr>
+        </tbody>
+    </table>
     </div>
     <!-- The close pop-up link correctly positioned at the end of the content block -->
     <a href="#links" class="close"><span>Back to links</span></a> </div>
     </div>
-    <table style="width: 750px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
-    <colgroup><col width="750px" /></colgroup> <tbody>
-    <tr>
-    <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
-    <span class="style6">
-            Incident Objectives (ICS 202) </span>
-    <span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span>
-    </td>
-    </tr>
+    <table border="1" cellpadding="3" cellspacing="0">
+        <tbody>
+        <tr valign="top">
+            <td colspan="11">
+                <div class="formHeader">Incident Objectives (ICS 202)
+                    <a href="#pop1" class="instrhref">202 Instructions</a>
+                </div>
+            </td>
+        </tr>
     <tr valign="middle">
     <td id="IncidentName" style="height: 35px;" colspan="3" class="formtext"><strong>1. Incident Name: </strong><input maxlength="50" name="inc_name" id="inc_name" size="55" required="" />
     </td>
@@ -64,7 +67,6 @@
     Time To:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />  
     </td>
     </tr>
-    
     <tr class="formtext">
     <td colspan="3"><strong>3. Objectives:</strong>
     <p><span class="western"> <textarea onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" placeholder="Enter objectives here" id="Message" rows="6" cols="100" name="Message"></textarea> </span></p>
@@ -82,21 +84,21 @@
     </tr>
     <tr class="formtext">
     <td colspan="3"><strong>5. Safety Plan Required?</strong> <form action=""> Yes <input type="checkbox" name="yes"> No<input type="checkbox" name="no"></form>
-    <p>Approved Site Safety Plan(s) Located at: <input type="text" name="approvedPlan" size="9"></p>
+    <p>Approved Site Safety Plan(s) Located at: <input type="text" name="approvedPlan" size="65"></p>
     </td> 
     </tr>
     <tr class="formtext">
     <td colspan="3"><strong>6. Incident Action Plan (the items checked below are included in this Incident Action Plan):</strong>
     <br/>
-    ICS 202<input type="checkbox" name="ICS202"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ICS 206<input type="checkbox" name="ICS206"/> 
+    <input type="checkbox" name="ICS202"/>ICS 202 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="ICS206"/>ICS 206
     <br/>
-    ICS 203<input type="checkbox" name="ICS203"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ICS 207<input type="checkbox" name="ICS207"/>
+    <input type="checkbox" name="ICS203"/>ICS 203 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="ICS207"/>ICS 207
     <br/>
-    ICS 204<input type="checkbox" name="ICS204"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ICS 208<input type="checkbox" name="ICS208"/>
+    <input type="checkbox" name="ICS204"/>ICS 204 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="ICS208"/>ICS 208
     <br/>
-    ICS 205<input type="checkbox" name="ICS205"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Map/Chart<input type="checkbox" name="Map/Chart"/>
+    <input type="checkbox" name="ICS205"/>ICS 205 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="Map/Chart"/>Map/Chart
     <br/>
-    ICS 205A<input type="checkbox" name="ICS205A"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Weather Forecast/Tides/Currents<input type="checkbox" name="WeatherForecast"/>
+    <input type="checkbox" name="ICS205A"/>ICS 205A &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="WeatherForecast"/>Weather Forecast/Tides/Currents
     <br/>
     <p>Other Attachments:</p>
     <input type="checkbox" name=""/> <input type="text" class="form-control" />
@@ -108,17 +110,14 @@
     <tr>
     <td style="height: 35px;" colspan="3">
         <strong>7. Prepared by:&nbsp;</strong>Name: <input size="15" maxlength="25" type="text" name="pname"/>&nbsp; Position Title: <input type="text" size="15" maxlength="25" name="ptitle"/>&nbsp; Signature: <input type="text" size="14" maxlength="25" name="sig"/> <br/>
-        <strong>8. Approved by Incident Commander:</strong>&nbsp; <input name="Approved_Name" id="Approved_Name" size="25" maxlength="30" required="" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Name: <input type="text" name="ICname"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/> Signature: <input type="text" name="ICsig"/>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position/Title: &nbsp;<input required="required" name="Approved_PosTitle" id="Approved_PosTitle" size="35" maxlength="30" /> <br />
+        <strong>8. Approved by Incident Commander:</strong> Name: <input type="text" name="ICname"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Signature: <input type="text" name="ICsig"/>
     </td>
     </tr>
     <tr class="formtext">
     <td colspan="3">
-    ICS 202 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IAP Page <input type="text" name="iap"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date/Time <input type="text" name="dateTime"/>
+    <strong>ICS 202</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>IAP Page</strong> <input type="text" name="iap"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date/Time <input type="text" name="dateTime"/>
     </td>
     </tr>
-    
-    
     </tr>
     </tbody>
     </table>
