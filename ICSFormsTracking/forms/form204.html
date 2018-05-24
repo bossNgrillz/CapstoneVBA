@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <meta content="text/html; charset=iso-8859-1" http-equiv="content-type"><title>Assignment List 204</title>  
+    <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
+    </head>
+    <body>
+        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS204" method="post">
+            <div id="pop1" class="pop-up"><!-- The pop-up block -->
+            <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
+            <div class="popScroll"><!-- Test for help starts here -->
+                        <h2>Assignment List (204)</h2>
+                        <p align="left"><strong>Purpose:</strong><br/>
+                            The Assignment List(s) (ICS 204) informs Division and Group supervisors of incident assignments. 
+                            Once the Command and General Staffs agree to the assignments, the assignment information is given to
+                            the appropriate Divisions and Groups.<br/>  
+                        </p>
+                        <p align="left"><strong>Preparation:</strong><br/>
+                            The ICS 204 is normally prepared by the Resources Unit, using guidance from the Incident Objectives (ICS 202),
+                            Operational Planning Worksheet (ICS 215), and the Operations Section Chief. It must be approved by the Incident
+                            Commander, but may be reviewed and initialed by the Planning Section Chief and Operations Section Chief as well.
+                        </p>
+                        <p align="left"><strong>Distribution:</strong><br/>
+                            The ICS 204 is duplicated and attached to the ICS 202 and given to all recipients as part of the Incident Action
+                            Plan (IAP). In some cases, assignments may be communicated via radio/telephone/fax. All completed original forms
+                            must be given to the Documentation Unit.		
+                        </p>
+                        <p align="left"><strong>Notes:</strong><br/>
+                        <ul>
+                            <li>The ICS 204 details assignments at Division and Group levels and is part of the IAP.</li>
+                            <li>Multiple pages/copies can be used if needed.</li>
+                            <li>If additional pages are needed, use a blank ICS 204 and repaginate as needed.</li>
+                        </ul>
+                        </p>
+            </div>
+            <a href="#links" class="close"><span>Back to links</span></a> </div>
+            </div>
+            <table colspan="5" border="1" cellpadding="3" cellspacing="0">
+                    <tbody>
+                    <tr valign="top">
+                        <td colspan="5">
+                            <div class="formHeader" style="text-align:center"><strong>Assignment List (204)</strong>
+                                <a href="#pop1" class="instrhref">204 Instructions</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>1. Incident Name:</strong>
+                            <input title="Incident name" required="required" id="204Incident_Name" maxlength="25" name="204Incident_Name" size="25" />
+                        </td>
+                        <td><strong>2. Operational Period:</strong> <br/>
+                            Date From: <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="8" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
+                            Date To: <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="8" maxlength="10" onclick="SetDateTime('fulldate',this.id)" /><br/>
+                            Time From: <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />&nbsp;&nbsp;&nbsp;
+                            Time To: <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />  
+                            </td>
+                        <td>
+                            <table>
+                                <th style="text-align: left; vertical-align: top;">3,</th>
+                                <tr><td><strong>Branch:</strong></td><td><input name="204Branch" id="204Branch" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Division:</strong></td><td><input name="204Division" id="204Division" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Group:</strong></td><td><input name="204Group" id="204Group" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Staging Area:</strong></td><td><input name="204Staging" id="204Staging" size="12" maxlength="35"/></td></tr>
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table>
+                                <th style="text-align: left; vertical-align: top;">4. Operations Personnel:</th>
+                                <td>&emsp;&emsp;&emsp;Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Contact Number(s)</td>
+                                <tr><td>Operations Section Chief:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td><td>&emsp;&emsp;<input name="operationsName" id="operationsName" size="15" maxlength="40"/>
+                                    &emsp;&emsp;&emsp;&emsp;<input name="operationsContact" id="operationsContact" size="22" maxlength="35"/></td></tr>
+                                <tr><td>Branch Director:</td><td>&emsp;&emsp;<input name="operationsName1" id="operationsName1" size="15" maxlength="40"/>
+                                    &emsp;&emsp;&emsp;&emsp;<input name="operationsContact1" id="operationsContact1" size="22" maxlength="35"/></td></tr>
+                                <tr><td>Division/Group Supervisor:</td><td>&emsp;&emsp;<input name="operationsName2" id="operationsName2" size="15" maxlength="40"/>
+                                    &emsp;&emsp;&emsp;&emsp;<input name="operationsContact2" id="operationsContact2" size="22" maxlength="35"/></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                                <table>
+                                        <td colspan="3" valign="top"><strong>5. Resources Assigned:</strong></td>
+                                        <tr>
+                                                <td>Resource Identifier&emsp;&emsp;</td>
+                                                <td>Leader&emsp;&emsp;</td>
+                                                <td># of Persons&emsp;&emsp;</td>
+                                                <td>Contact e.g., (phone, pager,<br/> radio, frequency, etc.)&emsp;&emsp;</td>
+                                                <td>&emsp;&emsp;Reporting Location, Special Equipment and <br/>&emsp;&emsp;Supplies, Remarks, Notes, Information</td>
+                                        </tr>
+                                </table>
+                        </td>                        
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource1" id="resource1" size="14" maxlength="35"/>
+                            <input name="leader1" id="leader1" size="11" maxlength="35"/>
+                            <input name="persons1" id="persons1" size="11" maxlength="35"/>
+                            <input name="contact1" id="contact1" size="26" maxlength="35"/>
+                            <input name="report1" id="report1" size="41" maxlength="35"/>
+
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource2" id="resource2" size="14" maxlength="35"/>
+                            <input name="leader2" id="leader2" size="11" maxlength="35"/>
+                            <input name="persons2" id="persons2" size="11" maxlength="35"/>
+                            <input name="contact2" id="contact2" size="26" maxlength="35"/>
+                            <input name="report2" id="report2" size="41" maxlength="35"/>
+                            </td>
+                        </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource3" id="resource3" size="14" maxlength="35"/>
+                            <input name="leader3" id="leader3" size="11" maxlength="35"/>
+                            <input name="persons3" id="persons3" size="11" maxlength="35"/>
+                            <input name="contact3" id="contact3" size="26" maxlength="55"/>
+                            <input name="report3" id="report3" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource4" id="resource4" size="14" maxlength="35"/>
+                            <input name="leader4" id="leader4" size="11" maxlength="35"/>
+                            <input name="persons4" id="persons4" size="11" maxlength="35"/>
+                            <input name="contact4" id="contact4" size="26" maxlength="55"/>
+                            <input name="report4" id="report4" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource5" id="resource5" size="14" maxlength="35"/>
+                            <input name="leader5" id="leader5" size="11" maxlength="35"/>
+                            <input name="persons5" id="persons5" size="11" maxlength="35"/>
+                            <input name="contact5" id="contact5" size="26" maxlength="55"/>
+                            <input name="report5" id="report5" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource6" id="resource6" size="14" maxlength="35"/>
+                            <input name="leader6" id="leader6" size="11" maxlength="35"/>
+                            <input name="persons6" id="persons6" size="11" maxlength="35"/>
+                            <input name="contact6" id="contact6" size="26" maxlength="55"/>
+                            <input name="report6" id="report6" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource7" id="resource7" size="14" maxlength="35"/>
+                            <input name="leader7" id="leader7" size="11" maxlength="35"/>
+                            <input name="persons7" id="persons7" size="11" maxlength="35"/>
+                            <input name="contact7" id="contact7" size="26" maxlength="55"/>
+                            <input name="report7" id="report7" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource8" id="resource8" size="14" maxlength="35"/>
+                            <input name="leader8" id="leader8" size="11" maxlength="35"/>
+                            <input name="persons8" id="persons8" size="11" maxlength="35"/>
+                            <input name="contact8" id="contact8" size="26" maxlength="55"/>
+                            <input name="report8" id="report8" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource9" id="resource9" size="14" maxlength="35"/>
+                            <input name="leader9" id="leader9" size="11" maxlength="35"/>
+                            <input name="persons9" id="persons9" size="11" maxlength="35"/>
+                            <input name="contact9" id="contact9" size="26" maxlength="55"/>
+                            <input name="report9" id="report9" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr colspan="3">
+                        <td colspan="3">
+                            <input name="resource10" id="resource10" size="14" maxlength="35"/>
+                            <input name="leader10" id="leader10" size="11" maxlength="35"/>
+                            <input name="persons10" id="persons10" size="11" maxlength="35"/>
+                            <input name="contact10" id="contact10" size="26" maxlength="55"/>
+                            <input name="report10" id="report10" size="41" maxlength="35"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; vertical-align: top;" colspan="3"><strong>6. Work Assignments:</strong>
+                        <p><span class="western"> <textarea rows="9" cols="120"onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" id="204assignments" name="204assignments"></textarea></span></p>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left; vertical-align: top;" colspan="3"><strong>7. Special Instructions:</strong>
+                        <p><span class="western"> <textarea rows="9" cols="120"onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" id="204specialInstructions" name="204specialInstructions"></textarea></span></p>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                                <table>
+                                        <td colspan="3" valign="top"><strong>8. Communications (radio and/or phone contact numbers needed for this assignment):</strong></td>
+                                        <tr>
+                                                <td>Name/Function&emsp;&emsp;&emsp;&emsp;</td>
+                                                <td>Assignment&emsp;&emsp;&emsp;&emsp;</td>
+                                                <td>Primary Contact: indicate cell, pager, or radio (frequency/system/channel)&emsp;&emsp;<br/></td></td>
+                                        </tr>
+                    </tr>
+                                        
+                                </table>
+                                <tr>
+                                    <td colspan="3">
+                                        <input name="communicationsName" id="communicationsName" size="18" maxlength="35"/>&nbsp;/
+                                        <input name="communicationsAssignment" id="communicationsAssignment" size="16" maxlength="35"/>
+                                        <input name="communicationsContact" id="communicationsContact" size="78" maxlength="95"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input name="communicationsName1" id="communicationsName1" size="18" maxlength="35"/>&nbsp;/
+                                        <input name="communicationsAssignment1" id="communicationsAssignment1" size="16" maxlength="35"/>
+                                        <input name="communicationsContact1" id="communicationsContact1" size="78" maxlength="95"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input name="communicationsName2" id="communicationsName2" size="18" maxlength="35"/>&nbsp;/
+                                        <input name="communicationsAssignment2" id="communicationsAssignment2" size="16" maxlength="35"/>
+                                        <input name="communicationsContact2" id="communicationsContact2" size="78" maxlength="95"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input name="communicationsName3" id="communicationsName3" size="18" maxlength="35"/>&nbsp;/
+                                        <input name="communicationsAssignment3" id="communicationsAssignment3" size="16" maxlength="35"/>
+                                        <input name="communicationsContact3" id="communicationsContact3" size="78" maxlength="95"/>
+                                    </td>
+                                </tr>
+                        <tr>
+                            <td colspan="3">
+                                <strong>9. Prepared By: </strong>
+                                Name: <input name="204PreparedBy" id="204PreparedBy" size="11" maxlength="35"/>&emsp;&emsp;
+                                Position/Title: <input name="204Position" id="204Position" size="15" maxlength="35"/>&emsp;&emsp;
+                                Signature: <input name="204Signature" id="204Signature" size="15" maxlength="35"/><br/>
+                                <strong>ICS 204</strong>&emsp;&emsp;&emsp;&emsp;
+                                <strong>IAP Page</strong><input name="204IAP" id="204IAP" size="15" maxlength="35"/>
+                            </td>
+                        </tr>                       
+                    
+                    </tbody>
+                    </table>
+                    </form>
+                    <button><a href="form204.html" class="btn btn-default" target="_blank">ADD A 204</a></button>
+                    <button><a href="form204x.html" class="btn btn-default" target="_blank">ADD A 204x for more resources</a></button>
+                    
+                
+    </body>
+</html>

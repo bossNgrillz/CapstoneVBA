@@ -1,7 +1,9 @@
 const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
 let openedFile;
 const os = require('os'); 
-
+const pdf=require('html-pdf');
+const opn=require('opn');
+const phe=require('print-html-element');
 $('.btn').click(function(e) {
     $('.btn').not(this).removeClass('active');    
     $(this).toggleClass('active');
@@ -53,7 +55,7 @@ $(document).on('click', '#formNum', function(){
 
 $(document).on('click', '.formOptions button', function(e){
     e.preventDefault();
-    let elements = document.getElementById('formy').elements;
+    /*let elements = document.getElementById('form').elements;
     let content ="{";
     for (let i = 0, element; element = elements[i++];) {
         if (element.type === "text" && element.value === "")
@@ -61,7 +63,7 @@ $(document).on('click', '.formOptions button', function(e){
             else 
                 content += element.name + ": " + element.value + "," + os.EOL;
     }
-    content += "}";
+    content += "}";*/
     const buttonClicked = $(this).text().trim();
     const formNumber = $(this).parent().parent().find('#formNum').text();
 
@@ -79,12 +81,29 @@ $(document).on('click', '.formOptions button', function(e){
         case 'Delete':
             delForm(openedFile);
             break;
+        case 'Print':
+            printForm(formNumber);
+            break;
         default:
             alert("Something went wrong");
             break;
     }
 });
 
+function printForm(formNumber){
+    phe.printElement(document.getElementById('content'));
+   // window.print();
+    /*const formHtml='./forms/form' + formNumber + '.html';
+    var html=fs.readFileSync(formHtml, 'utf8');
+    var options={format: 'Letter'}; 
+    var filePDF='./forms/form' + formNumber + '.pdf';
+    pdf.create(html, options).toFile(filePDF, function(err, res){
+        if(err) return console.log(err);
+        //opn(filePDF);
+        
+    });*/
+
+}
 function newForm(formNumber){
     const formHtml = './forms/form' + formNumber + '.html';
     
@@ -191,9 +210,13 @@ function GetForms(){
     num: '202'},
         {name: 'Organizational Assignment List',
     num: '203'},
-        {name: 'Divishion Assignment List',
+        {name: 'Assignment List',
+    num: '203(2)'},
+        {name: 'Organization Assignment List(ICS203)',
     num: '204'},
-        {name: 'Add a 204',
+        {name: 'Assignment List(204x)',
+    num: '204x'},
+        {name: '204x',
     num: 'Add 204'},
         {name: 'Incident Radio Communications Plan',
     num: '205'},
