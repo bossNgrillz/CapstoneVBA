@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
 </head>
 <body pbzloc="9">
-        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS208" method="post">
+        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS209" method="post">
 <div id="pop1" class="pop-up"><!-- The pop-up block -->
 <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
 <div class="popScroll"><!-- Test for help starts here -->
@@ -82,7 +82,7 @@
             </p>
             <p align="left"><strong>Notes:</strong>
             <br/>
-            <ul>
+            <ul class="a">
                 <li>
                     To promote flexibility, only a limited number of ICS 209 blocks are typically required, and most of those are required only when applicable.
                 </li>
@@ -93,7 +93,7 @@
                     depending on local/jurisdictional/discipline practices.
                 </li>
                 <li>For additional flexibility only pages 1-3 are numbered, for two reasons:
-                    <ul>
+                    <ul class="a">
                         <li>Possible submission of additional pages for the Remarks Section (Block 47), and</li>
                         <li>Possible submission of additional copies of the fourth/last page (the "Incident Resource Commitment Summary")
                             to provide a more detailed resource summary.</li>
@@ -107,6 +107,816 @@
                         <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
                         <td colspan="3" width="30%"><strong>Block Title</strong></td>
                         <td colspan="9"><strong>Instructions</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*1</strong></td>
+                        <td colspan="3"><strong>Incident Name</td>
+                        <td colspan="9"><strong>REQUIRED BLOCK.</strong>
+                            <ul class="a">
+                                <li>Enter the full name assigned to the incident.  </li>
+                                <li>Check spelling of the full incident name.</li>
+                                <li>For an incident that is a Complex, use the word "Complex" at the end of the incident name.</li>
+                                <li>If the name changes, explain comments in Remarks, Block 47.</li>
+                                <li>Do not use the same incident name for different incidents in the same calendar year.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>2</strong></td>
+                        <td colspan="3"><strong>Incident Number</strong></td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the appropriate number based on current guidance.  The incident number may vary by jurisdiction and discipline.</li>
+                                <li>Examples include:
+                                    <ul class="b">
+                                        <li>A computer-aided dispatch (CAD) number.</li>
+                                        <li>An accounting number.</li>
+                                        <li>A county number.</li>
+                                        <li>A disaster declaration number.</li>
+                                        <li>A combination of the State, unit/agency ID, and a dispatch system number.</li>
+                                        <li>A mission number.</li>
+                                        <li>Any other unique number assigned to the incident and derived by means other than those above.</li>
+                                    </ul>
+                                </li>
+                                <li>Make sure the number entered is correct.</li>
+                                <li>Do not use the same incident number for two different incidents in the same calendar year.</li>
+                                <li>Incident numbers associated with host jurisdictions or agencies and incident numbers assigned by agencies represented in Unified Command should be listed, or indicated in Remarks, Block 47.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="5"><strong>*3</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Report Version</strong> (check one box on left)</td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED BLOCK.</strong>
+                            <ul class="a">
+                                <li>This indicates the current version of the ICS 209 form being submitted.</li>
+                                <li>If only one ICS 209 will be submitted, check BOTH "Initial" and "Final" (or check only "Final").</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">
+                                &#9633; Initial
+                        </td>
+                        <td colspan="9" rowspan="1">Check “Initial” if this is the first ICS 209 for this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">
+                                &#9633; Update
+                        </td>
+                        <td colspan="9" rowspan="1">Check “Update” if this is a subsequent report for the same incident.  These can be submitted at various time intervals (see “Reporting Requirements” above).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">
+                                &#9633; Final
+                        </td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Check “Final” if this is the last ICS 209 to be submitted for this incident (usually when the incident requires only minor support that can be supplied by the organization having jurisdiction).</li>
+                                <li>Incidents may also be marked as “Final” if they become part of a new Complex (when this occurs, it can be indicated in Remarks, Block 47).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Report # (if used)</td>
+                        <td colspan="9" rowspan="1">Use this optional field if your agency or organization requires the tracking of ICS 209 report numbers.  Agencies may also track the ICS 209 by the date/time submitted.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*4</strong></td>
+                        <td colspan="3"><strong>Incident Commander(s) & Agency or Organization</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK.</strong>
+                            <ul class="a">
+                                <li>Enter both the first and last name of the Incident Commander.</li>If only one ICS 209 will be submitted, check BOTH "Initial" and "Final" (or check only "Final").</li>
+                                <li>If the incident is under a Unified Command, list all Incident Commanders by first initial and last name separated by a comma, including their organization.  For example:
+                                    <ul>
+                                        <li>L. Burnett – Minneapolis FD, R. Domanski – Minneapolis PD,</li>
+                                        <li>C. Taylor – St. Paul PD, Y. Martin – St. Paul FD,</li>
+                                        <li>S. McIntyre – U.S. Army Corps, J. Hartl – NTSB</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>5</strong></td>
+                        <td colspan="3"><strong>Incident Management Organization</strong></td>
+                        <td colspan="9">Indicate the incident management organization for the incident, which may be a Type 1, 2, or 3 Incident Management Team (IMT), a Unified Command, a Unified Command with an IMT, etc.  This block should not be completed unless a recognized incident management organization is assigned to the incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="4"><strong>*6</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Incident Start Date/Time</strong></td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED.</strong><br>
+                            This is always the start date and time of the incident (not the report date and time or operational period).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Date</td>
+                        <td colspan="9" rowspan="1">Enter the start date (month/day/year).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Time</td>
+                        <td colspan="9" rowspan="1">Enter the start time (using the 24-hour clock).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Time Zone</td>
+                        <td colspan="9" rowspan="1">Enter the time zone of the incident (e.g., EDT, PST).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>7</strong></td>
+                        <td colspan="3"><strong>Current Incident Size or Area Involved</strong> (use unit label – e.g., “sq mi,” “city block”)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the appropriate incident descriptive size or area involved (acres, number of buildings, square miles, hectares, square kilometers, etc.).</li>
+                                <li>Enter the total area involved for incident Complexes in this block, and list each sub-incident and size in Remarks (Block 47).</li>
+                                <li>Indicate that the size is an estimate, if a more specific figure is not available.</li>
+                                <li>Incident size may be a population figure rather than a geographic figure, depending on the incident definition and objectives.</li>
+                                <li>If the incident involves more than one jurisdiction or mixed ownership, agencies/organizations may require listing a size breakdown by organization, or including this information in Remarks (Block 47).</li>
+                                <li>The incident may be one part of a much larger event (refer to introductory instructions under “Preparation).  Incident size/area depends on the area actively managed within the incident objectives and incident operations, and may also be defined by a delegation of authority or letter of expectation outlining management bounds.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>8</strong></td>
+                        <td colspan="3"><strong>Percent (%) Contained or Completed</strong> (circle one)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the percent that this incident is completed or contained (e.g., 50%), with a % label.</li>
+                                <li>For example, a spill may be 65% contained, or flood response objectives may be 50% met.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*9</strong></td>
+                        <td colspan="3"><strong>Incident Definition</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK.</strong><br>
+                            Enter a general definition of the incident in this block.  This may be a general incident category or kind description, such as “tornado,” “wildfire,” “bridge collapse,” “civil unrest,” “parade,” “vehicle fire,” “mass casualty,” etc.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>10</strong></td>
+                        <td colspan="3"><strong>Incident Complexity Level</strong></td>
+                        <td colspan="9">Identify the incident complexity level as determined by Unified/Incident Commanders, if available or used.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="3"><strong>*11</strong></td>
+                        <td colspan="3" rowspan="1"><strong>For Time Period </strong></td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED BLOCK.</strong>
+                            <ul class="a">
+                                <li>Enter the time interval for which the form applies.  This period should include all of the time since the last ICS 209 was submitted, or if it is the initial ICS 209, it should cover the time lapsed since the incident started.</li>
+                                <li>The time period may include one or more operational periods, based on agency/organizational reporting requirements.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">From Date/Time</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the start date (month/day/year).</li>
+                                <li>Enter the start time (using the 24-hour clock).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">To Date/Time</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the end date (month/day/year).</li>
+                                <li>Enter the end time (using the 24-hour clock).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13"><strong>APPROVAL & ROUTING INFORMATION</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="4"><strong>*12</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Prepared By</strong></td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED BLOCK.</strong><br>
+                            When an incident management organization is in place, this would be the Situation Unit Leader or Planning Section Chief at the incident.  On other incidents, it could be a dispatcher in the local emergency communications center, or another staff person or manager.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Print Name</td>
+                        <td colspan="9" rowspan="1">Print the name of the person preparing the form.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">ICS Position</td>
+                        <td colspan="9" rowspan="1">The ICS title of the person preparing the form (e.g., “Situation Unit Leader”).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Date/Time Prepared</td>
+                        <td colspan="9" rowspan="1">Enter the date (month/day/year) and time (using the 24-hour clock) the form was prepared.  Enter the time zone if appropriate.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="2"><strong>*13</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Date/Time Submitted</strong></td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED.</strong><br>
+                            Enter the submission date (month/day/year) and time (using the 24-hour clock).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Time Zone</td>
+                        <td colspan="9" rowspan="1">Enter the time zone from which the ICS 209 was submitted (e.g., EDT, PST).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="4"><strong>*14</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Approved By</strong></td>
+                        <td colspan="9" rowspan="1"><strong>REQUIRED.</strong><br>
+                            When an incident management organization is in place, this would be the Situation Unit Leader or Planning Section Chief at the incident.  On other incidents, it could be a dispatcher in the local emergency communications center, or another staff person or manager.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Print Name</td>
+                        <td colspan="9" rowspan="1">Print the name of the person approving the form.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">ICS Position</td>
+                        <td colspan="9" rowspan="1">The position of the person signing the ICS 209 should be entered (e.g., “Incident Commander”).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">Signature</td>
+                        <td colspan="9" rowspan="1">Signature of the person approving the ICS 209, typically the Incident Commander.  The original signed ICS 209 should be maintained with other incident documents.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*15</strong></td>
+                        <td colspan="3"><strong>Primary Location, Organization, or Agency Sent To</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK.</strong><br>
+                            Enter the appropriate primary location or office the ICS 209 was sent to apart from the incident.  This most likely is the entity or office that ordered the incident management organization that is managing the incident.  This may be a dispatch center or a MACS element such as an emergency operations center.  If a dispatch center or other emergency center prepared the ICS 209 for the incident, indicate where it was submitted initially.
+                        </td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13"><strong>INCIDENT LOCATION INFORMATION</strong></td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13">
+                            <ul class="a">
+                                <li>Much of the “Incident Location Information” in Blocks 16–26 is optional, but completing as many fields as possible increases accuracy, and improves interoperability and information sharing between disparate systems.</li>
+                                <li>As with all ICS 209 information, accuracy is essential because the information may be widely distributed and used in a variety of systems.  Location and/or geospatial data may be used for maps, reports, and analysis by multiple parties outside the incident.</li>
+                                <li>Be certain to follow accepted protocols, conventions, or standards where appropriate when submitting location information, and clearly label all location information.</li>
+                                <li>Incident location information is usually based on the point of origin of the incident, and the majority of the area where the incident jurisdiction is.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*16</strong></td>
+                        <td colspan="3"><strong>State</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>Enter the State where the incident originated.</li>
+                                <li>If other States or jurisdictions are involved, enter them in Block 25 or Block 44.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*17</strong></td>
+                        <td colspan="3"><strong>County / Parish / Borough</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>Enter the county, parish, or borough where the incident originated.</li>
+                                <li>If other counties or jurisdictions are involved, enter them in Block 25 or Block 47.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*18</strong></td>
+                        <td colspan="3"><strong>City</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>Enter the city where the incident originated.</li>
+                                <li>If other cities or jurisdictions are involved, enter them in Block 25 or Block 47.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>19</strong></td>
+                        <td colspan="3"><strong>Unit or Other</strong></td>
+                        <td colspan="9">Enter the unit, sub-unit, unit identification (ID) number or code (if used), or other information about where the incident originated.  This may be a local identifier that indicates primary incident jurisdiction or responsibility (e.g., police, fire, public works, etc.) or another type of organization.  Enter specifics in Block 25.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*20</strong></td>
+                        <td colspan="3"><strong>Incident Jurisdiction</strong></td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            Enter the jurisdiction where the incident originated (the entry may be general, such as Federal, city, or State, or may specifically identify agency names such as Warren County, U.S. Coast Guard, Panama City, NYPD).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>21</strong></td>
+                        <td colspan="3"><strong>Incident Location Ownership</strong> (if different than jurisdiction)</td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>When relevant, indicate the ownership of the area where the incident originated, especially if it is different than the agency having jurisdiction.</li>
+                                <li>This may include situations where jurisdictions contract for emergency services, or where it is relevant to include ownership by private entities, such as a large industrial site.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>22</strong></td>
+                        <td colspan="3"><strong>Longitude</strong> (indicate format):<br><br>
+                            <strong>Latitude</strong> (indicate format):
+                        </td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the longitude and latitude where the incident originated, if available and normally used by the authority having jurisdiction for the incident.</li>
+                                <li>Clearly label the data, as longitude and latitude can be derived from various sources.  For example, if degrees, minutes, and seconds are used, label as “33 degrees, 45 minutes, 01 seconds.”</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>23</strong></td>
+                        <td colspan="3"><strong>US National Grid Reference</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the US National Grid (USNG) reference where the incident originated, if available and commonly used by the agencies/jurisdictions with primary responsibility for the incident.</li>
+                                <li>Clearly label the data.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>24</strong></td>
+                        <td colspan="3"><strong>Legal Description</strong> (township, section, range)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter the legal description where the incident originated, if available and commonly used by the agencies/jurisdictions with primary responsibility for the incident.</li>
+                                <li>Clearly label the data (e.g., N 1/2 SE 1/4, SW 1/4, S24, T32N, R18E).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*25</strong></td>
+                        <td colspan="3"><strong>Short Location or Area Description</strong> (list all affected areas or a reference point)</td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>List all affected areas as described in instructions for Blocks 16–24 above, OR summarize a general location, OR list a reference point for the incident (e.g., “the southern third of Florida,” “in ocean 20 miles west of Catalina Island, CA,” or “within a 5 mile radius of Walden, CO”).</li>
+                                <li>This information is important for readers unfamiliar with the area (or with other location identification systems) to be able to quickly identify the general location of the incident on a map.</li>
+                                <li>Other location information may also be listed here if needed or relevant for incident support (e.g., base meridian).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>26</strong></td>
+                        <td colspan="3"><strong>UTM Coordinates</strong></td>
+                        <td colspan="9">Indicate Universal Transverse Mercator reference coordinates if used by the discipline or jurisdiction.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>27</strong></td>
+                        <td colspan="3"><strong>Note any electronic geospatial data included or attached</strong> (indicate data format, content, and collection time information and labels)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Indicate whether and how geospatial data is included or attached.</li>
+                                <li>Utilize common and open geospatial data standards.</li>
+                                <li><u>WARNING</u>: Do not attach or send extremely large data files with the ICS 209.  Incident geospatial data that is distributed with the ICS 209 should be simple incident geospatial basics, such as the incident perimeter, origin, etc.  Data file sizes should be small enough to be easily transmitted through dial-up connections or other limited communications capabilities when ICS 209 information is transmitted electronically.</li>
+                                <li><u>NOTE</u>: Clearly indicate data content.  For example, data may be about an incident perimeter (such as a shape file), the incident origin (a point), a point and radius (such as an evacuation zone), or a line or lines (such as a pipeline).</li>
+                                <li><u>NOTE</u>: Indicate the data format (e.g., .shp, .kml, .kmz, or .gml file) and any relevant information about projection, etc.</li>
+                                <li><u>NOTE</u>: Include a hyperlink or other access information if incident map data is posted online or on an FTP (file transfer protocol) site to facilitate downloading and minimize information requests.</li>
+                                <li><u>NOTE</u>: Include a point of contact for getting geospatial incident information, if included in the ICS 209 or available and supporting the incident.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13"><strong>INCIDENT SUMMARY</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>*28</strong></td>
+                        <td colspan="3"><strong>Significant Events for the Time Period Reported</strong> (summarize significant progress made, evacuations, incident growth, etc.)</td>
+                        <td colspan="9"><strong>REQUIRED BLOCK WHEN APPLICABLE.</strong><br>
+                            <ul class="a">
+                                <li>Describe significant events that occurred during the period being reported in Block 6.  Examples include:</li>
+                                    <ul class="b">
+                                        <li>Road closures.</li>
+                                        <li>Evacuations.</li>
+                                        <li>Progress made and accomplishments.</li>
+                                        <li>Incident command transitions.</li>
+                                        <li>Repopulation of formerly evacuated areas and specifics.</li>
+                                        <li>Containment.</li>
+                                    </ul>
+                                </li>
+                                <li>Refer to other blocks in the ICS 209 when relevant for additional information (e.g., “Details on evacuations may be found in Block 33”), or in Remarks, Block 47.</li>
+                                <li>Be specific and detailed in reference to events.  For example, references to road closures should include road number and duration of closure (or include further detail in Block 33).  Use specific metrics if needed, such as the number of people or animals evacuated, or the amount of a material spilled and/or recovered.</li>
+                                <li>This block may be used for a single-paragraph synopsis of overall incident status.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>29</strong></td>
+                        <td colspan="3"><strong>Primary Materials or Hazards Involved</strong> (hazardous chemicals, fuel types, infectious agents, radiation, etc.)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>When relevant, enter the appropriate primary materials, fuels, or other hazards involved in the incident that are leaking, burning, infecting, or otherwise influencing the incident.</li>
+                                <li> Examples include hazardous chemicals, wildland fuel models, biohazards, explosive materials, oil, gas, structural collapse, avalanche activity, criminal activity, etc.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="8"><strong>30</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Damage Assessment Information</strong> (summarize damage and/or restriction of use or availability to residential or commercial property, natural resources, critical infrastructure and key resources, etc.)</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Include a short summary of damage or use/access restrictions/ limitations caused by the incident for the reporting period, and cumulatively.</li>
+                                <li>Include if needed any information on the facility status, such as operational status, if it is evacuated, etc. when needed.</li>
+                                <li>Include any critical infrastructure or key resources damaged/destroyed/ impacted by the incident, the kind of infrastructure, and the extent of damage and/or impact and any known cascading impacts.</li>
+                                <li>Refer to more specific or detailed damage assessment forms and packages when they are used and/or relevant.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"><strong>A. Structural Summary</strong></td>
+                        <td colspan="9" rowspan="1">Complete this table as needed based on the definitions for 30B–G below.  Note in table or in text block if numbers entered are estimates or are confirmed.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">B. # Threatened (72 hrs)</td>
+                        <td colspan="9" rowspan="1">Enter the number of structures potentially threatened by the incident within the next 72 hours, based on currently available information.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">C. # Damaged</td>
+                        <td colspan="9" rowspan="1">Enter the number of structures damaged by the incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">D. # Destroyed</td>
+                        <td colspan="9" rowspan="1">Enter the number of structures destroyed beyond repair by the incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">E. Single Residences</td>
+                        <td colspan="9" rowspan="1">Enter the number of single dwellings/homes/units impacted in Columns 30B–D.  Note any specifics in the text block if needed, such as type of residence (apartments, condominiums, single-family homes, etc.).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">F. Nonresidential Commercial Properties</td>
+                        <td colspan="9" rowspan="1">Enter the number of buildings or units impacted in Columns 30B–D.  This includes any primary structure used for nonresidential purposes, excluding Other Minor Structures (Block 30G).  Note any specifics regarding building or unit types in the text block.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">G. Other Minor Structures</td>
+                        <td colspan="9" rowspan="1">Enter any miscellaneous structures impacted in Columns 30B–D not covered in 30E–F above, including any minor structures such as booths, sheds, or outbuildings.</td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13"><strong>ADDITIONAL INCIDENT DECISION SUPPORT INFORMATION (PAGE 2)</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="15"><strong>31</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Public Status Summary</strong></td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>This section is for summary information regarding incident-related injuries, illness, and fatalities for civilians (or members of the public); see 31C–N below.</li>
+                                <li>Explain or describe the nature of any reported injuries, illness, or other activities in Life, Safety, and Health Status/Threat Remarks (Block 33).</li>
+                                <li>Illnesses include those that may be caused through a biological event such as an epidemic or an exposure to toxic or radiological substances.</li>
+                                <li><u>NOTE</u>: <i>Do not estimate any fatality information.</i></li>
+                                <li><u>NOTE</u>: Please use caution when reporting information in this section that may be on the periphery of the incident or change frequently.  This information should be reported as accurately as possible as a snapshot in time, as much of the information is subject to frequent change.</li>
+                                <li><u>NOTE</u>: Do not complete this block if the incident covered by the ICS 209 is <i>not directly responsible</i> for these actions (such as evacuations, sheltering, immunizations, etc.) <i>even if they are related to the incident</i>.
+                                    <ul class="b">
+                                        <li>Only the authority having jurisdiction should submit reports for these actions, to mitigate multiple/conflicting reports.</li>
+                                        <li>For example, if managing evacuation shelters is part of the incident operation itself, do include these numbers in Block 31J with any notes in Block 33.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <strong><u>Handling Sensitive Information</u></strong>
+                            <ul class="a">
+                                <li>Release of information in this section should be carefully coordinated within the incident management organization to ensure synchronization with public information and investigative/intelligence actions.</li>
+                                <li>Thoroughly review the “Distribution” section in the introductory ICS 209 instructions for details on handling sensitive information.  Use caution when providing information in any situation involving fatalities, and verify that appropriate notifications have been made prior to release of this information.  Electronic transmission of any ICS 209 may make information available to many people and networks at once.</li>
+                                <li>Information regarding fatalities should be cleared with the Incident Commander and/or an organizational administrator prior to submission of the ICS 209.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"><strong>A. # This Reporting Period</strong></td>
+                        <td colspan="9" rowspan="1">Enter the total number of individuals impacted in each category for this reporting period (since the previous ICS 209 was submitted).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">B. Total # to Date</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the total number of individuals impacted in each category for the entire duration of the incident.</li>
+                                <li>This is a cumulative total number that should be adjusted each reporting period.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">C. Indicate Number of Civilians (Public) Below</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>For lines 31D–M below, enter the number of civilians affected for each category.</li>
+                                <li>Indicate if numbers are estimates, for those blocks where this is an option.</li>
+                                <li>Civilians are those members of the public who are affected by the incident, but who are not included as part of the response effort through Unified Command partnerships and those organizations and agencies assisting and cooperating with response efforts.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">D. Fatalities</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the number of <i>confirmed</i> civilian/public fatalities.</li>
+                                <li>See information in introductory instructions (“Distribution”) and in Block 31 instructions regarding sensitive handling of fatality information.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">E. With Injuries/Illness</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilian/public injuries or illnesses directly related to the incident.  Injury or illness is defined by the incident or jurisdiction(s).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">F. Trapped/In Need of Rescue</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are trapped or in need of rescue due to the incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">G. Missing (note if estimated)</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are missing due to the incident.  Indicate if an estimate is used.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">H. Evacuated (note if estimated)</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are evacuated due to the incident.  These are likely to be best estimates, but indicate if they are estimated.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">I. Sheltering-in-Place (note if estimated)</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are sheltering in place due to the incident.  Indicate if estimates are used.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">J. In Temporary Shelters (note if estimated)</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are in temporary shelters as a direct result of the incident, noting if the number is an estimate.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">K. Have Received Mass Immunizations</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who have received mass immunizations due to the incident and/or as part of incident operations.  Do not estimate.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">L. Require Mass Immunizations (note if estimated)</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who require mass immunizations due to the incident and/or as part of incident operations.  Indicate if it is an estimate.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">M. In Quarantine</td>
+                        <td colspan="9" rowspan="1">Enter the number of civilians who are in quarantine due to the incident and/or as part of incident operations.  Do not estimate.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">N. Total # Civilians (Public) Affected</td>
+                        <td colspan="9" rowspan="1">Enter sum totals for Columns 31A and 31B for Rows 31D–M.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="14"><strong>*32</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Responder Status Summary</strong></td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>This section is for summary information regarding incident-related injuries, illness, and fatalities for responders; see 32C–N.</li>
+                                <li>Illnesses include those that may be related to a biological event such as an epidemic or an exposure to toxic or radiological substances directly in relation to the incident.</li>
+                                <li>Explain or describe the nature of any reported injuries, illness, or other activities in Block 33.</li>
+                                <li><u>NOTE</u>: <i>Do not estimate any fatality information or responder status information.</i></li>
+                                <li><u>NOTE</u>: Please use caution when reporting information in this section that may be on the periphery of the incident or change frequently.  This information should be reported as accurately as possible as a snapshot in time, as much of the information is subject to frequent change.</li>
+                                <li><u>NOTE</u>: Do not complete this block if the incident covered by the ICS 209 is <i>not directly responsible</i> for these actions (such as evacuations, sheltering, immunizations, etc.) even if they are related to the incident.  Only the authority having jurisdiction should submit reports for these actions, to mitigate multiple/conflicting reports.</li>
+                            </ul>
+                            <strong><u>Handling Sensitive Information</u></strong>
+                            <ul class="a">
+                                <li>Release of information in this section should be carefully coordinated within the incident management organization to ensure synchronization with public information and investigative/intelligence actions.</li>
+                                <li>Thoroughly review the “Distribution” section in the introductory ICS 209 instructions for details on handling sensitive information.  Use caution when providing information in any situation involving fatalities, and verify that appropriate notifications have been made prior to release of this information.  Electronic transmission of any ICS 209 may make information available to many people and networks at once.</li>
+                                <li>Information regarding fatalities should be cleared with the Incident Commander and/or an organizational administrator prior to submission of the ICS 209.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"><strong>A. # This Reporting Period</strong></td>
+                        <td colspan="9" rowspan="1">Enter the total number of responders impacted in each category for this reporting period (since the previous ICS 209 was submitted).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">B. Total # to Date</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the total number of individuals impacted in each category for the entire duration of the incident.</li>
+                                <li>This is a <i>cumulative</i>i total number that should be adjusted each reporting period.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">C. Indicate Number of Responders Below</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>For lines 32D–M below, enter the number of responders relevant for each category.</li>
+                                <li>Responders are those personnel included as part of Unified Command partnerships and those organizations and agencies assisting and cooperating with response efforts.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">D. Fatalities</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the number of <i>confirmed</i> responder fatalities.</li>
+                                <li>See information in introductory instructions (“Distribution”) and for Block 32 regarding sensitive handling of fatality information.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">E. With Injuries/Illness</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Enter the number of incident responders with serious injuries or illnesses due to the incident.</li>
+                                <li><i>For responders, serious injuries or illness are typically those in which the person is unable to continue to perform in his or her incident assignment</i>, but the authority having jurisdiction may have additional guidelines on reporting requirements in this area.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">F. Trapped/In Need of Rescue</td>
+                        <td colspan="9" rowspan="1">Enter the number of incident responders who are in trapped or in need of rescue due to the incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">G. Missing</td>
+                        <td colspan="9" rowspan="1">Enter the number of incident responders who are missing due to incident conditions.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">H.</td>
+                        <td colspan="9" rowspan="1">(BLANK; use however is appropriate.)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">I. Sheltering in Place</td>
+                        <td colspan="9" rowspan="1">Enter the number of responders who are sheltering in place due to the incident.  Once responders become the victims, this needs to be noted in Block 33 or Block 47 and handled accordingly.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">J.</td>
+                        <td colspan="9" rowspan="1">(BLANK; use however is appropriate.)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">L. Require Immunizations</td>
+                        <td colspan="9" rowspan="1">Enter the number of responders who require immunizations due to the incident and/or as part of incident operations.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">M. In Quarantine</td>
+                        <td colspan="9" rowspan="1">Enter the number of responders who are in quarantine as a direct result of the incident and/or related to incident operations.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">N. Total # Responders Affected</td>
+                        <td colspan="9" rowspan="1">Enter sum totals for Columns 32A and 32B for Rows 32D–M.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>33</strong></td>
+                        <td colspan="3"><strong>Life, Safety, and Health Status/Threat Remarks</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Enter any details needed for Blocks 31, 32, and 34.  Enter any specific comments regarding illness, injuries, fatalities, and threat management for this incident, such as whether estimates were used for numbers given in Block 31.</li>
+                                <li>This information should be reported as accurately as possible as a snapshot in time, as much of the information is subject to frequent change.</li>
+                                <li>Evacuation information can be very sensitive to local residents and officials.  Be accurate in the assessment.</li>
+                                <li>Clearly note primary responsibility and contacts for any activities or information in Blocks 31, 32, and 34 that may be caused by the incident, but that are being managed and/or reported by other parties.</li>
+                                <li>Provide additional explanation or information as relevant in Blocks 28, 36, 38, 40, 41, or in Remarks (Block 47).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" rowspan="16"><strong>*34</strong></td>
+                        <td colspan="3" rowspan="1"><strong>Life, Safety, and Health Threat Management</strong></td>
+                        <td colspan="9" rowspan="1">Note any details in Life, Safety, and Health Status/Threat Remarks (Block 33), and provide additional explanation or information as relevant in Blocks 28, 36, 38, 40, 41, or in Remarks (Block 47).</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1"><strong>A. Check if Active</strong></td>
+                        <td colspan="9" rowspan="1">Check any applicable blocks in 34C–P based on currently available information regarding incident activity and potential.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">B. Notes</td>
+                        <td colspan="9" rowspan="1">Note any specific details, or include in Block 33.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">C. No Likely Threat</td>
+                        <td colspan="9" rowspan="1">Check if there is no likely threat to life, health, and safety.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">D. Potential Future Threat</td>
+                        <td colspan="9" rowspan="1">Check if there is a potential future threat to life, health, and safety.  </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">E. Mass Notifications In Progress</td>
+                        <td colspan="9" rowspan="1">
+                            <ul class="a">
+                                <li>Check if there are any mass notifications in progress regarding emergency situations, evacuations, shelter in place, or other public safety advisories related to this incident.</li>
+                                <li>These may include use of threat and alert systems such as the Emergency Alert System or a “reverse 911” system.</li>
+                                <li>Please indicate the areas where mass notifications have been completed (e.g., “mass notifications to ZIP codes 50201, 50014, 50010, 50011,” or “notified all residents within a 5-mile radius of Gatlinburg”).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">F. Mass Notifications Completed</td>
+                        <td colspan="9" rowspan="1">Check if actions referred to in Block 34E above have been completed.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">G. No Evacuation(s) Imminent</td>
+                        <td colspan="9" rowspan="1">Check if evacuations are not anticipated in the near future based on current information.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">H. Planning for Evacuation</td>
+                        <td colspan="9" rowspan="1">Check if evacuation planning is underway in relation to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">I. Planning for Shelter-in-Place</td>
+                        <td colspan="9" rowspan="1">Check if planning is underway for shelter-in-place activities related to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">J. Evacuation(s) in Progress</td>
+                        <td colspan="9" rowspan="1">Check if there are active evacuations in progress in relation to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">K. Shelter-In-Place in Progress</td>
+                        <td colspan="9" rowspan="1">Check if there are active shelter-in-place actions in progress in relation to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">L. Repopulation in Progress</td>
+                        <td colspan="9" rowspan="1">Check if there is an active repopulation in progress related to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">M. Mass Immunization in Progress</td>
+                        <td colspan="9" rowspan="1">Check if there is an active mass immunization in progress related to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">N. Mass Immunization Complete</td>
+                        <td colspan="9" rowspan="1">Check if a mass immunization effort has been completed in relation to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">O. Quarantine in Progress</td>
+                        <td colspan="9" rowspan="1">Check if there is an active quarantine in progress related to this incident.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" rowspan="1">P. Area Restriction in Effect</td>
+                        <td colspan="9" rowspan="1">Check if there are any restrictions in effect, such as road or area closures, especially those noted in Block 28.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>35</strong></td>
+                        <td colspan="3"><strong>Weather Concerns</strong> (synopsis of current and predicted weather; discuss related factors that may cause concern)</td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Complete a short synopsis/discussion on significant weather factors that could cause concerns for the incident when relevant.</li>
+                                <li>Include current and/or predicted weather factors, and the timeframe for predictions.</li>
+                                <li>Include relevant factors such as:
+                                    <ul class="b">
+                                        <li>Wind speed (label units, such as mph).</li>
+                                        <li>Wind direction (clarify and label where wind is coming from and going to in plain language – e.g., “from NNW,” “from E,” or “from SW”).</li>
+                                        <li>Temperature (label units, such as F).</li>
+                                        <li>Relative humidity (label %).</li>
+                                        <li>Watches.</li>
+                                        <li>Warnings.</li>
+                                        <li>Tides.</li>
+                                        <li>Currents</li>
+                                    </ul>
+                                </li>
+                                <li>Any other weather information relative to the incident, such as flooding, hurricanes, etc.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>36</strong></td>
+                        <td colspan="3"><strong>Projected Incident Activity, Potential, Movement, Escalation, or Spread</strong> and influencing factors during the next operational period and in 12-, 24-, 48-, and 72-hour timeframes<br>
+                            <strong>12 hours</strong><br><br><br>
+                            <strong>24 hours</strong><br><br>
+                            <strong>48 hours</strong><br><br><br>
+                            <strong>72 hours</strong><br>
+                            <strong>Anticipated after 72 hours</strong>
+                        </td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>Provide an estimate (when it is possible to do so) of the direction/scope in which the incident is expected to spread, migrate, or expand during the next indicated operational period, or other factors that may cause activity changes.</li><br><br><br>
+                                <li>Discuss incident potential relative to values at risk, or values to be protected (such as human life), and the potential changes to those as the incident changes.</li>
+                                <li>Include an estimate of the acreage or area that will likely be affected.</li>
+                                <li>If known, provide the above information in 12-, 24-, 48- and 72-hour timeframes, and any activity anticipated after 72 hours.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>37</strong></td>
+                        <td colspan="3"><strong>Strategic Objectives</strong> (define planned end-state for incident)</td>
+                        <td colspan="9">Briefly discuss the desired outcome for the incident based on currently available information.  Note any high-level objectives and any possible strategic benefits as well (especially for planned events).</td>
+                    </tr>
+                    <tr class="instrMidTr">
+                        <td colspan="13"><strong>ADDITIONAL INCIDENT DECISION SUPPORT INFORMATION</strong> (continued) <strong>(PAGE 3)</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>38</strong></td>
+                        <td colspan="3"><strong>Current Incident Threat Summary and Risk Information in 12-, 24-, 48-, and 72-hour timeframes and beyond.</strong>  Summarize primary incident threats to life, property, communities and community stability, residences, health care facilities, other critical infrastructure and key resources, commercial facilities, natural and environmental resources, cultural resources, and continuity of operations and/or business.  Identify corresponding incident-related potential economic or cascading impacts.<br>
+                            <strong>12 hours</strong><br>
+                            <strong>24 hours</strong><br>
+                            <strong>48 hours</strong><br>
+                            <strong>72 hours</strong><br>
+                            <strong>Anticipated after 72 hours</strong>
+                        </td>
+                        <td colspan="9">Summarize major or significant threats due to incident activity based on currently available information.  Include a breakdown of threats in terms of 12-, 24-, 48-, and 72-hour timeframes.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>39</strong></td>
+                        <td colspan="3"><strong>Critical Resource Needs</strong> in 12-, 24-, 48-, and 72-hour timeframes and beyond to meet critical incident objectives.  List resource category, kind, and/or type, and amount needed, in priority order:<br><br>
+                            <strong>12 hours</strong><br><br><br><br>
+                            <strong>24 hours</strong><br><br>
+                            <strong>48 hours</strong><br><br><br>
+                            <strong>72 hours</strong><br>
+                            <strong>Anticipated after 72 hours</strong>
+                        </td>
+                        <td colspan="9">
+                            <ul class="a">
+                                <li>List the specific critical resources and numbers needed, in order of priority.  <i>Be specific as to the need.</i></li><br><br><br><br><br><br>
+                                <li>Use plain language and common terminology for resources, and indicate resource category, kind, and type (if available or known) to facilitate incident support.</li>
+                                <li>If critical resources are listed in this block, there should be corresponding orders placed for them through appropriate resource ordering channels.</li>
+                                <li>Provide critical resource needs in 12-, 24-, 48- and 72-hour increments.  List the most critical resources needed for each timeframe, if needs have been identified for each timeframe.  Listing critical resources by the time they are needed gives incident support personnel a “heads up” for short-range planning, and assists the ordering process to ensure these resources will be in place when they are needed.</li>
+                                <li>More than one resource need may be listed for each timeframe.  For example, a list could include:
+                                    <ul class="b">
+                                        <li><u>24 hrs</u>:  3 Type 2 firefighting helicopters, 2 Type I Disaster Medical Assistance Teams</li>
+                                        <li><u>48 hrs</u>:  Mobile Communications Unit (Law/Fire)</li>
+                                        <li><u>After 72 hrs</u>:  1 Type 2 Incident Management Team</li>
+                                    </ul>
+                                </li>
+                                <li>Documentation in the ICS 209 can help the incident obtain critical regional or national resources through outside support mechanisms including multiagency coordination systems and mutual aid.
+                                    <ul class="b">
+                                        <li>Information provided in other blocks on the ICS 209 can help to support the need for resources, including Blocks 28, 29, 31–38, and 40–42.</li>
+                                        <li>Additional comments in the Remarks section (Block 47) can also help explain what the incident is requesting and why it is critical (for example, “Type 2 Incident Management Team is needed in three days to transition command when the current Type 2 Team times out”).</li>
+                                    </ul>
+                                </li>
+                                <li>Do not use this block for noncritical resources.</li>
+                            </ul>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -291,7 +1101,6 @@
                     <strong>30. Damage Assessment Information</strong>(summarize damage and/or restriction of use or availability to residential or commercial property, natural resources, critical infrastructure and key resources, etc.):
                     <p><span class="western"> <textarea rows="3" cols="90" onchange="this.value=RWS(this.value)" onkeyup="AutoGrowTextArea(this)" id="damageAssessment" name="209DamageAssessment"></textarea> </span></p>
                 </td>
-                
                 </tr>
 <tr>
 <td style="vertical-align: top; text-align: left; width: 35%;">

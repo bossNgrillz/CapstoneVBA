@@ -1,14 +1,13 @@
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS203</title>
-
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><title>ICS 203</title>
+        <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
     </head>
     <body onload="SetDateTime('autodate','Mdate');SetDateTime('autotime','Mtime')">
         <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS203" method="post">
             <div id="pop1" class="pop-up"><!-- The pop-up block -->
             <div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
             <div class="popScroll"><!-- Test for help starts here -->
-    
         <h2>ICS 203 Organization Assignment List (ICS203)</h2>
         <p align="left"><strong>Purpose: </strong>
             <br />
@@ -30,13 +29,161 @@
             
             </p>
             <p align="left"><strong>Notes:</strong>
-            <ul>
+            <ul class="a">
                 <li>The ICS 203 serves as part of the IAP.</li>
                 <li>If needed, more than one name can be put in each block by inserting a slash.</li>
                 <li>If additional pages are needed, use a blank ICS 203 and repaginate as needed.</li>
                 <li>ICS allows for organizational flexibility, so the Intelligence/Investigations Function can be embedded in several different places within the organizational structure.</li>
             </ul>
            </p>
+           <table class="instrTable">
+                <tbody>
+                    <tr class="instrTopTr">
+                        <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+                        <td colspan="3" width="30%"><strong>Block Title</strong></td>
+                        <td colspan="9"><strong>Instructions</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>1</strong></td>
+                        <td colspan="3"><strong>Incident Name</td>
+                        <td colspan="9">Enter the name assigned to the incident.  If needed, an incident number can be added.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>2</strong></td>
+                        <td colspan="3"><strong>Operational Period</strong>
+                            <ul class="a">
+                                <li>Date and Time From</li>
+                                <li>Date and Time To</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the start date (month/day/year) and time (using the 24-hour clock) and end date and time for the operational period to which the form applies.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>3</strong></td>
+                        <td colspan="3"><strong>Incident Commander(s) and Command Staff</strong>
+                            <ul class="a">
+                                <li>IC/UC</li>
+                                <li>Deputy</li>
+                                <li>Safety Officer</li>
+                                <li>Public Information Officer</li>
+                                <li>Liaison Officer</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the names of the Incident Commander(s) and Command Staff.  Label Assistants to Command Staff as such (for example, "Assistant Safety Officer").<br>
+                            For all individuals, use at least the first initial and last name.<br>
+                            For Unified Command, also include agency names.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>4</strong></td>
+                        <td colspan="3"><strong>Agency/Organization Representatives</strong>
+                            <ul class="a">
+                                <li>Agency/Organization</li>
+                                <li>Name</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the agency/organization names and the names of their representatives.  For all individuals, use at least the first initial and last name.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>5</strong></td>
+                        <td colspan="3"><strong>Planning Section</strong>
+                            <ul class="a">
+                                <li>Chief</li>
+                                <li>Deputy</li>
+                                <li>Resources Unit</li>
+                                <li>Situation Unit</li>
+                                <li>Documentation Unit</li>
+                                <li>Demobilization Unit</li>
+                                <li>Technical Specialists</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the name of the Planning Section Chief, Deputy, and Unit Leaders after each position title.  List Technical Specialists with an indication of specialty.<br>
+                            If there is a shift change during the specified operational period, list both names, separated by a slash.<br>
+                            For all individuals, use at least the first initial and last name.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>6</strong></td>
+                        <td colspan="3"><strong>Logistics Section</strong>
+                            <ul class="a">
+                                <li>Chief</li>
+                                <li>Deputy</li>
+                            </ul>
+                            <strong>Support Branch</strong>
+                            <ul class="a">
+                                <li>Director</li>
+                                <li>Supply Unit</li>
+                                <li>Facilities Unit</li>
+                                <li>Ground Support Unit</li>
+                            </ul>
+                            <strong>Service Branch</strong>
+                            <ul class="a">
+                                <li>Director</li>
+                                <li>Communications Unit</li>
+                                <li>Medical Unit</li>
+                                <li>Food Unit</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the name of the Logistics Section Chief, Deputy, Branch Directors, and Unit Leaders after each position title.<br>
+                            If there is a shift change during the specified operational period, list both names, separated by a slash.<br>
+                            For all individuals, use at least the first initial and last name.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>7</strong></td>
+                        <td colspan="3"><strong>Operations Section</strong>
+                            <ul class="a">
+                                <li>Chief</li>
+                                <li>Deputy</li>
+                                <li>Staging Area</li>
+                            </ul>
+                            <strong>Branch</strong>
+                            <ul class="a">
+                                <li>Branch Director</li>
+                                <li>Deputy</li>
+                                <li>Division/Group</li>
+                            </ul>
+                            <strong>Air Operations Branch</strong>
+                            <ul class="a">
+                                <li>Air Operations Branch Director</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the name of the Operations Section Chief, Deputy, Branch Director(s), Deputies, and personnel staffing each of the listed positions.  For Divisions/Groups, enter the Division/Group identifier in the left column and the individual's name in the right column.<br>
+                            Branches and Divisions/Groups may be named for functionality or by geography.  For Divisions/Groups, indicate Division/Group Supervisor.  Use an additional page if more than three Branches are activated.<br>
+                            If there is a shift change during the specified operational period, list both names, separated by a slash.<br>
+                            For all individuals, use at least the first initial and last name.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>8</strong></td>
+                        <td colspan="3"><strong>Finance/Administration Section</strong>
+                            <ul class="a">
+                                <li>Chief</li>
+                                <li>Deputy</li>
+                                <li>Time Unit</li>
+                                <li>Procurement Unit</li>
+                                <li>Compensation/Claims Unit</li>
+                                <li>Cost Unit</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the name of the Finance/Administration Section Chief, Deputy, and Unit Leaders after each position title.<br>
+                            If there is a shift change during the specified operational period, list both names, separated by a slash.<br>
+                            For all individuals, use at least the first initial and last name.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><strong>9</strong></td>
+                        <td colspan="3"><strong>Prepared by</strong>
+                            <ul class="a">
+                                <li>Name</li>
+                                <li>Position/Title</li>
+                                <li>Signature</li>
+                                <li>Date/Time</li>
+                            </ul>
+                        </td>
+                        <td colspan="9">Enter the name, ICS position, and signature of the person preparing the form.  Enter date (month/day/year) and time prepared (24-hour clock).</td>
+                    </tr>
+                </tbody>
+            </table>
            </div>
            <a href="#links" class="close"><span>Back to links</span></a>
         </div>
@@ -44,12 +191,12 @@
     <table style="width: 750px; height: 100px;" border="1" cellpadding="3" cellspacing="0">
         <colgroup><col width="750px" /></colgroup> 
         <tbody>
-        <tr>
-        <td style="text-align:center; background-color: rgb(204, 204, 204);" colspan="9">
-        <span class="style6">
-                Organization Assignment List (ICS 203) </span>
-        <span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">Form Instructions</span></a></span>
-        </td>
+        <tr valign="top">
+            <td colspan="9">
+                <div class="formHeader">Organization Assignment List (ICS 203)
+                    <a href="#pop1" class="instrhref">203 Instructions</a>
+                </div>
+            </td>
         </tr>
         <tr valign="middle">
             <td style="height: 35px;" colspan="2" class="formtext"><strong>1. Incident Name: </strong><input maxlength="50" name="inc_name" id="inc_name" size="35" required="" />

@@ -1,333 +1,325 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/211.css" />
-    <link rel="stylesheet" type="text/css" href="./css/genForms.css" />
+    <head>
+    <meta content="text/html; charset=iso-8859-1" http-equiv="content-type"><title>ICS 211</title>  
+    <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
 </head>
-<body>
-    <div class="fwrapper">
-        <table class="tg landscape">
-                <tr>
-                  <th class="tg-s6z2" colspan="19">Incident Check-in List (ICS 211)</th>
+<body pbzloc="9">
+        <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS211" method="post">
+<div id="pop1" class="pop-up"><!-- The pop-up block -->
+<div class="popBox"><!-- If the content becomes larger than the pop-up this div will scroll the content -->
+<div class="popScroll"><!-- Test for help starts here -->
+<h2>Incident Check-in List (ICS 211)</h2>
+<p align="left"><strong>Purpose.</strong><br>
+<br>
+Personnel and equipment arriving at the incident can check in at various incident locations.  Check-in consists of reporting specific information, which is recorded on the Check-In List (ICS 211).  The ICS 211 serves several purposes, as it:  (1) records arrival times at the incident of all overhead personnel and equipment, (2) records the initial location of personnel and equipment to facilitate subsequent assignments, and (3) supports demobilization by recording the home base, method of travel, etc., for resources checked in.
+<br>
+</p>
+<p align="left"><strong>Preparation.</strong><br>
+<br>
+The ICS 211 is initiated at a number of incident locations including:  Staging Areas, Base, and Incident Command Post (ICP).  Preparation may be completed by:  (1) overhead at these locations, who record the information and give it to the Resources Unit as soon as possible, (2) the Incident Communications Center Manager located in the Communications Center, who records the information and gives it to the Resources Unit as soon as possible, (3) a recorder from the Resources Unit during check-in to the ICP.  As an option, the ICS 211 can be printed on colored paper to match the designated Resource Status Card (ICS 219) colors.  The purpose of this is to aid the process of completing a large volume of ICS 219s.  The ICS 219 colors are:<br>
+<ul>
+        <li>219-1:  Header Card -- Gray (used only as label cards for T-Card racks)</li>
+        <li>219-2:  Crew/Team Card -- Green</li>
+        <li>219-3:  Engine Card -- Rose</li>
+        <li>219-4:  Helicopter Card -- Blue</li>
+        <li>219-5:  Personnel Card -- White</li>
+        <li>219-6:  Fixed-Wing Card -- Orange</li>
+        <li>219-7:  Equipment Card -- Yellow</li>
+        <li>219-8:  Miscellaneous Equipment/Task Force Card -- Tan</li>
+        <li>219-10:  Generic Card -- Light Purple</li>
+</ul>
+</p>
+<p align="left"><strong>Distribution.</strong><br>
+<br>
+ICS 211s, which are completed by personnel at the various check-in locations, are provided to the Resources Unit, Demobilization Unit, and Finance/Administration Section.  The Resources Unit maintains a master list of all equipment and personnel that have reported to the incident.
+</p>
+<p align="left"><strong>Notes:</strong><br>
+<ul>
+        <li>Also available as 8.5 x 14 (legal size) or 11 x 17 chart.</li>
+        <li>Use reverse side of form for remarks or comments.</li>
+        <li>If additional pages are needed for any form page, use a blank ICS 211 and repaginate as needed.</li>
+</ul>
+</p>
+<table class="instrTable">
+    <tbody>
+        <tr class="instrTopTr">
+            <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+            <td colspan="3" width="30%"><strong>Block Title</strong></td>
+            <td colspan="9"><strong>Instructions</strong></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<!-- The close pop-up link correctly positioned at the end of the content block -->
+<a href="#links" class="close"><span>Back to links</span></a> </div>
+</div>
+<table style="width: 1300px; height: 100%;" border="1" cellpadding="3" cellspacing="0">
+        <colgroup><col width="657" /></colgroup>
+        <tbody>
+            <tr valign="top">
+                <td colspan="20" height="1px">
+        <div class="formHeader">Incident Check-in List (ICS 211)
+            <a href="#pop1" class="instrhref">211 Instructions</a>
+        </div>
+    </td>
+</tr>
+<tr>
+        <td colspan="3">
+                <strong>1. Incident Name:</strong>
+                <input title="Incident name" required="required" id="209Incident_Name" maxlength="25" name="209Incident_Name" size="25" />
+        </td>
+        <td colspan="4">
+                <strong>2. Incident Number:</strong>
+                    <input class="inputfill" title="Incident number" required="required" id="209Incident_Number" maxlength="25" name="209Incident_Number" size="25" />
+        </td>
+                  <td colspan="9"><strong>3. Check-In Location (complete all that apply):</strong><br>
+                        <input type="checkbox" />Base&nbsp;
+                        <input type="checkbox" />Staging Area&nbsp;
+                        <input type="checkbox" />ICP&nbsp;
+                        <input type="checkbox" />Helibase&nbsp;
+                        <input type="checkbox" />Other
+                </td>
+                  <td colspan="4"><strong>4. Start Date/Time:</strong><br>
+                        Date:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
+                        Time:&nbsp; <input title="Click to change the time or overwrite" name="Mtime" id="Mtime" size="6" maxlength="75" onclick="SetDateTime('hm',this.id)" />
+                  </td>
                 </tr>
                 <tr>
-                  <td class="tg-031e" colspan="3">1. Incident Name:</td>
-                  <td class="tg-031e" colspan="3">2. Incident Number:</td>
-                  <td class="tg-yw4l" colspan="10">3. Check-In Location (complete all that apply):</td>
-                  <td class="tg-yw4l" colspan="3">4. Start Date/Time:</td>
+                <td colspan="20"><strong>Check-In Information</strong> (use reverse of form for remarks or comments)</td>
                 </tr>
                 <tr>
-                  <td class="tg-031e" colspan="3" rowspan="2"><input type="text" /></td>
-                  <td class="tg-031e" colspan="3" rowspan="2"><input type="text" /></td>
-                  <td class="tg-yw4l" colspan="2" rowspan="2"><input type="checkbox" />Base</td>
-                  <td class="tg-yw4l" colspan="2" rowspan="2"><input type="checkbox" />Staging Area</td>
-                  <td class="tg-yw4l" colspan="2" rowspan="2"><input type="checkbox" />ICP</td>
-                  <td class="tg-yw4l" colspan="2" rowspan="2"><input type="checkbox" />Helibase</td>
-                  <td class="tg-yw4l" colspan="2" rowspan="2"><input type="checkbox" />Other</td>
-                  <td class="tg-yw4l">Date:</td>
-                  <td class="tg-yw4l" colspan="2"><input type="text" /></td>
+                <th width="25%" height="55px" colspan="7" rowspan="1"><strong>5. List single resource personnel (overhead) by agency and name, OR list resources by the following format:</strong></td>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>6. Order Request #</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>7. Date/Time,<br>Check-In</span></th>
+                <th height="160px" class="rotate" colspan="2" rowspan="2"><span>8. Leader's Name</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>9. Total Number of Personnel</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>10. Incident Contact Information</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>11. Home Unit or Agency</span></th>
+                <th height="160px" class="rotate" colspan="2" rowspan="2"><span>12. Departure Point and Time</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>13. Method of Travel</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>14. Incident Assignment</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>15. Other Qualifications</span></th>
+                <th height="160px" class="rotate" colspan="1" rowspan="2"><span>16. Data Provided to Resources Unit</span></th>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">Time:</td>
-                  <td class="tg-yw4l" colspan="2"><input type="text" /></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>State</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>Agency</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>Category</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>Kind</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>Type</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>Resource Name<br>or Identifier</span></td>
+                <td height="105px" class="rotate" colspan="1" width="5%"><span>ST or TF</span></td>
+                </tr>      
+                <tr>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                  <td class="tg-031e" colspan="19">Check-In Information (use reverse of form for remarks or comments)</td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l" colspan="7">5. List single resource personnel (overhead) by agency and name, OR list resources by the following format:</td>
-                  <td class="tg-yw4l" rowspan="2">6. Order Request #</td>
-                  <td class="tg-yw4l" colspan="2">7. Date/Time,Check-In</td>
-
-                  
-                  <td class="tg-yw4l" rowspan="2">8. Leader’s Name</td>
-                  <td class="tg-yw4l" rowspan="2">9. Total Number of Personnel</td>
-                  <td class="tg-yw4l" rowspan="2">10. Incident Contact Information</td>
-                  <td class="tg-yw4l" rowspan="2">11. Home Unit or Agency</td>
-                  <td class="tg-yw4l" rowspan="2">12. Departure Point and Time</td>
-                  <td class="tg-yw4l" rowspan="2">13. Method of Travel</td>
-                  <td class="tg-yw4l" rowspan="2">14. Incident Assignment</td>
-                  <td class="tg-yw4l" rowspan="2">15. Other Qualifications</td>
-                  <td class="tg-yw4l" rowspan="2">16. Data Provided to Resources Unit</td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l">State</td>
-                  <td class="tg-yw4l">Agency</td>
-                  <td class="tg-yw4l">Category</td>
-                  <td class="tg-yw4l">Kind</td>
-                  <td class="tg-yw4l">Type</td>
-                  <td class="tg-yw4l">Resource Name or Identifier</td>
-                  <td class="tg-yw4l">ST or TF</td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
-                  <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="2" width="10%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
+                <td colspan="1" width="5%"><textarea cols="5" wrap="hard"></textarea></td>
                 </tr>
                 <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                        <td class="tg-yw4l"><input type="text" /></td>
-                </tr>
-                <tr>
-                  <td class="tg-yw4l" colspan="2">ICS 211</td>
-                  <td class="tg-yw4l" colspan="3">17. Prepared by:</td>
-                  <td class="tg-yw4l" colspan="3"><input type="text" /></td>
-                  <td class="tg-yw4l" colspan="3">Position/Title:</td>
-                  <td class="tg-yw4l" colspan="3"><input type="text" /></td>
-                  <td class="tg-yw4l">Signature:</td>
-                  <td class="tg-yw4l" colspan="2"><input type="text" /></td>
-                  <td class="tg-yw4l">Date/Time:</td>
-                  <td class="tg-yw4l"><input type="text" /></td>
+                <td colspan="1"><strong>ICS 211</strong></td>
+                <td colspan="2"><strong>17. Prepared by:</strong></td>
+                <td colspan="4"><input class="inputfill" type="text" /></td>
+                <td colspan="2"><strong>Position/Title:</strong></td>
+                <td colspan="4"><input class="inputfill" type="text" /></td>
+                <td colspan="1"><strong>Signature:</strong></td>
+                <td colspan="3"><input type="text" /></td>
+                <td colspan="1"><strong>Date/Time:</strong></td>
+                <td colspan="2"><input type="text" /></td>
                 </tr>
               </table>
     </div>

@@ -10,17 +10,21 @@ table {
     width: 700px;
 }
 .instrTopTr {
-    background-color:dimgray;
+    background-color: dimgray;
     color:white;
+}
+.instrMidTr {
+    background-color:rgb(190, 190, 190);
+    color:black;
 }
 .instrTable td {
     border: 2px solid black;
 }
-th.rotate {
+.rotate {
     vertical-align: bottom;
     font-weight: bold;
 }
-th.rotate span {
+.rotate span {
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
@@ -52,8 +56,10 @@ input, select {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 14px;
 }
+.inputfill {
+    width: 100%;
+}
 textarea {
-    padding: 2px;
     -moz-border-radius-topleft: 2px;
     -moz-border-radius-topright: 2px;
     -moz-border-radius-bottomright: 2px;
@@ -62,7 +68,16 @@ textarea {
     font-size: 14px;
     height: 99%;
     width: 99%;
-} 
+}
+table.instrTable tr {
+    vertical-align: top;
+}
+ul.a {
+    list-style-type: disc;
+}
+ul.b {
+    list-style-type: circle;
+}
 .rechtsbuendig {
     font-size: 12px;
     }
@@ -166,3 +181,53 @@ body {color:#000; background:#fff; font:100%/1.5 arial,sans-serif;}
 .form-control.nobug {
     transition: none; /*-- THIS IS IMPORTANT -- */
 }
+.fieldpadding {
+    margin-left: 30px;
+}
+.fieldpaddingex {
+    margin-left: 191px;
+}
+tr.dashedtop td {
+    border-top: 1px dashed #000;
+
+}
+/*tooltip for tips on certain fields*/
+/*span.tooltiptext:before {
+    content: "";
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color:  transparent transparent rgba(0,102,255,.5) transparent;
+    height: 0;
+    position: absolute;
+    top: -17px;
+    width: 0;
+}
+
+span.tooltiptext {
+    background-color: rgba(0,102,255,.15);
+    border: 2px solid rgba(0,102,255,.5);
+    border-radius: 10px;
+    color: #000;
+    display: none;
+    padding: 10px;
+    position: relative;
+}
+
+input.tooltip {
+    display: block
+}
+
+input.tooltip:hover + span.tooltiptext {
+    display: inline-block;
+    margin: 10px 0 0 10px
+}
+
+textarea.tooltip {
+    display: block
+}
+
+textarea.tooltip:hover + span.tooltiptext {
+    display: inline-block;
+    margin: 10px 0 0 10px
+}*/
+
