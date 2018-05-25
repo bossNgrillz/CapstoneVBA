@@ -1,9 +1,9 @@
 const fs = require('fs'); // Load the File System to execute our common tasks (CRUD)
 let openedFile;
 const os = require('os'); 
-const pdf=require('html-pdf');
 const opn=require('opn');
 const phe=require('print-html-element');
+
 $('.btn').click(function(e) {
     $('.btn').not(this).removeClass('active');    
     $(this).toggleClass('active');
