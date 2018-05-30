@@ -1,7 +1,7 @@
 <html>
     <head>
     <meta content="text/html; charset=iso-8859-1" http-equiv="content-type"><title>ICS 215</title>  
-    <link rel="stylesheet" type="text/css" href="./css/215.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/icsforms.css"/>
 </head>
 <body pbzloc="9">
     <form action="http://{FormServer}:{FormPort}" enctype="multipart/form-data" id="ICS215" method="post">
@@ -27,12 +27,127 @@
                     When the Branch, Division, or Group work assignments and accompanying resource allocations are agreed upon, the form is distributed to the Resources Unit to assist in the preparation of the ICS 204.  The Logistics Section will use a copy of this worksheet for preparing requests for resources required for the next operational period.
                     </p>
                     <p align="left"><strong>Notes:</strong>
-                    <ul>
+                    <ul class="a">
                         <li>This worksheet can be made into a wall mount.</li>
                         <li>Also available as 8.5 x 14 (legal size) and 11 x 17 chart.</li>
                         <li>If additional pages are needed, use a blank ICS 215 and repaginate as needed.</li>
                     </ul>
                     </p>
+                    <table class="instrTable">
+                        <tbody>
+                            <tr class="instrTopTr">
+                                <td colspan="1" width="10%"><strong>Block<br>Number</strong></td>
+                                <td colspan="3" width="30%"><strong>Block Title</strong></td>
+                                <td colspan="9"><strong>Instructions</strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>1</strong></td>
+                                <td colspan="3"><strong>Incident Name</strong></td>
+                                <td colspan="9">Enter the name assigned to the incident.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>2</strong></td>
+                                <td colspan="3"><strong>Operational Period</strong>
+                                    <ul class="a">
+                                        <li>Date and Time From</li>
+                                        <li>Date and Time To</li>
+                                    </ul>
+                                </td>
+                                <td colspan="9">Enter the start date (month/day/year) and time (using the 24-hour clock) and end date and time for the operational period to which the form applies.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>3</strong></td>
+                                <td colspan="3"><strong>Branch</strong></td>
+                                <td colspan="9">Enter the Branch of the work assignment for the resources.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>4</strong></td>
+                                <td colspan="3"><strong>Division, Group, or Other</strong></td>
+                                <td colspan="9">Enter the Division, Group, or other location (e.g., Staging Area) of the work assignment for the resources.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>5</strong></td>
+                                <td colspan="3"><strong>Work Assignment & Special Instructions</strong></td>
+                                <td colspan="9">Enter the specific work assignments given to each of the Divisions/Groups and any special instructions, as required.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" rowspan="4"><strong>6</strong></td>
+                                <td colspan="3" rowspan="1"><strong>Resources</strong></td>
+                                <td colspan="9" rowspan="1">Complete resource headings for category, kind, and type as appropriate for the incident.  The use of a slash indicates a single resource in the upper portion of the slash and a Strike Team or Task Force in the bottom portion of the slash.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" rowspan="1">
+                                    <ul class="a">
+                                        <li>Required</li>
+                                    </ul>
+                                </td>
+                                <td colspan="9" rowspan="1">Enter, for the appropriate resources, the number of resources by type (engines, crew, etc.) required to perform the work assignment.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" rowspan="1">
+                                    <ul class="a">
+                                        <li>Have</li>
+                                    </ul>
+                                </td>
+                                <td colspan="9" rowspan="1">Enter, for the appropriate resources, the number of resources by type (engines, crew, etc.) available to perform the work assignment.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" rowspan="1">
+                                    <ul class="a">
+                                        <li>Need</li>
+                                    </ul>
+                                </td>
+                                <td colspan="9" rowspan="1">Enter the number of resources needed by subtracting the number in the "Have" row from the number in the "Required" row.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>7</strong></td>
+                                <td colspan="3"><strong>Overhead Position(s)</strong></td>
+                                <td colspan="9">List any supervisory and nonsupervisory ICS position(s) not directly assigned to a previously identified resource (e.g., Division/Group Supervisor, Assistant Safety Officer, Technical Specialist, etc.).</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>8</strong></td>
+                                <td colspan="3"><strong>Special Equipment & Supplies</strong></td>
+                                <td colspan="9">List special equipment and supplies, including aviation support, used or needed.  This may be a useful place to monitor span of control.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>9</strong></td>
+                                <td colspan="3"><strong>Reporting Location</strong></td>
+                                <td colspan="9">Enter the specific location where the resources are to report (Staging Area, location at incident, etc.).</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>10</strong></td>
+                                <td colspan="3"><strong>Requested Arrival Time</strong></td>
+                                <td colspan="9">Enter the time (24-hour clock) that resources are requested to arrive at the reporting location.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>11</strong></td>
+                                <td colspan="3"><strong>Total Resources Required</strong></td>
+                                <td colspan="9">Enter the total number of resources required by category/kind/type as preferred (e.g., engines, crews, dozers, etc.).  A slash can be used again to indicate total single resources in the upper portion of the slash and total Strike Teams in the bottom portion of the slash.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>12</strong></td>
+                                <td colspan="3"><strong>Total Resources Have on Hand</strong></td>
+                                <td colspan="9">Enter the total number of resources on hand that are assigned to the incident for incident use.  A slash can be used again to indicate total single resources in the upper portion of the slash and total Strike Teams in the bottom portion of the slash.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>13</strong></td>
+                                <td colspan="3"><strong>Total Resources Need To Order</strong></td>
+                                <td colspan="9">Enter the total number of resources needed.  A slash can be used again to indicate total single resources in the upper portion of the slash and total Strike Teams in the bottom portion of the slash.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="1"><strong>14</strong></td>
+                                <td colspan="3"><strong>Prepared by</strong>
+                                    <ul class="a">
+                                        <li>Name</li>
+                                        <li>Position/Title</li>
+                                        <li>Signature</li>
+                                        <li>Date/Time</li>
+                                    </ul>
+                                </td>
+                                <td colspan="9">Enter the name, ICS position, and signature of the person preparing the form.  Enter date (month/day/year) and time prepared (24-hour clock).</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     </div>
                 <!-- The close pop-up link correctly positioned at the end of the content block -->
                 <a href="#links" class="close">
@@ -45,12 +160,10 @@
         <table style="width: 1000px; height: 100%;" border="1" cellpadding="3" cellspacing="0">
             <colgroup><col width="657" /></colgroup>
             <tbody>
-                <tr valign="top">
-                    <td colspan="20" height="1px">
-                        <div style="background-color: rgb(204, 204, 204);" align="center">
-                            <span class="style6">
-                                OPERATIONAL PLANNING WORKSHEET (ICS 215)
-                            </span><span class="style6"><a href="#pop1" class="style25 style7"><span style="color: rgb(204, 0, 0);">215 Instructions</span></a></span>
+                <tr>
+                    <td colspan="20">
+                        <div class="formHeader">OPERATIONAL PLANNING WORKSHEET (ICS 215)
+                            <a href="#pop1" class="instrhref">215 Instructions</a>
                         </div>
                     </td>
                 </tr>

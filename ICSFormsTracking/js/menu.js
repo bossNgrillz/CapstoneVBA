@@ -55,7 +55,7 @@ $(document).on('click', '#formNum', function(){
 
 $(document).on('click', '.formOptions button', function(e){
     e.preventDefault();
-    /*let elements = document.getElementById('form').elements;
+    let elements = document.getElementsByClassName('formy');
     let content ="{";
     for (let i = 0, element; element = elements[i++];) {
         if (element.type === "text" && element.value === "")
@@ -63,7 +63,7 @@ $(document).on('click', '.formOptions button', function(e){
             else 
                 content += element.name + ": " + element.value + "," + os.EOL;
     }
-    content += "}";*/
+    content += "}";
     const buttonClicked = $(this).text().trim();
     const formNumber = $(this).parent().parent().find('#formNum').text();
 
