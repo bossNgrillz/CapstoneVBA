@@ -55,7 +55,7 @@ $(document).on('click', '#formNum', function(){
 
 $(document).on('click', '.formOptions button', function(e){
     e.preventDefault();
-    let elements = document.getElementsByClassName('formy')[0];
+    let elements = document.getElementsByClassName('formSave')[0];
     let content ="{";
     for (let i = 0, element; element = elements[i++];) {
         if (element.type === "text" && element.value === "")
