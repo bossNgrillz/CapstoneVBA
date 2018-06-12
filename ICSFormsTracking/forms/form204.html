@@ -44,7 +44,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td name="204incidentName">
                             <strong>1. Incident Name:</strong>
                             <input title="Incident name" required="required" id="204Incident_Name" maxlength="25" name="204Incident_Name" size="25" />
                         </td>
@@ -57,10 +57,10 @@
                         <td>
                             <table>
                                 <th style="text-align: left; vertical-align: top;">3,</th>
-                                <tr><td><strong>Branch:</strong></td><td><input name="204Branch" id="204Branch" size="12" maxlength="35"/></td></tr>
-                                <tr><td><strong>Division:</strong></td><td><input name="204Division" id="204Division" size="12" maxlength="35"/></td></tr>
-                                <tr><td><strong>Group:</strong></td><td><input name="204Group" id="204Group" size="12" maxlength="35"/></td></tr>
-                                <tr><td><strong>Staging Area:</strong></td><td><input name="204Staging" id="204Staging" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Branch:</strong></td><td name="branch"><input name="204Branch" id="204Branch" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Division:</strong></td><td name="division"><input name="204Division" id="204Division" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Group:</strong></td><td name="group"><input name="204Group" id="204Group" size="12" maxlength="35"/></td></tr>
+                                <tr><td><strong>Staging Area:</strong></td name="stagingArea"><td><input name="204Staging" id="204Staging" size="12" maxlength="35"/></td></tr>
 
                             </table>
                         </td>
@@ -70,11 +70,11 @@
                             <table>
                                 <th style="text-align: left; vertical-align: top;">4. Operations Personnel:</th>
                                 <td>&emsp;&emsp;&emsp;Name&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Contact Number(s)</td>
-                                <tr><td>Operations Section Chief:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td><td>&emsp;&emsp;<input name="operationsName" id="operationsName" size="15" maxlength="40"/>
+                                <tr><td name="operations">Operations Section Chief:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</td><td>&emsp;&emsp;<input name="operationsName" id="operationsName" size="15" maxlength="40"/>
                                     &emsp;&emsp;&emsp;&emsp;<input name="operationsContact" id="operationsContact" size="22" maxlength="35"/></td></tr>
-                                <tr><td>Branch Director:</td><td>&emsp;&emsp;<input name="operationsName1" id="operationsName1" size="15" maxlength="40"/>
+                                <tr><td name="branchDirector">Branch Director:</td><td>&emsp;&emsp;<input name="operationsName1" id="operationsName1" size="15" maxlength="40"/>
                                     &emsp;&emsp;&emsp;&emsp;<input name="operationsContact1" id="operationsContact1" size="22" maxlength="35"/></td></tr>
-                                <tr><td>Division/Group Supervisor:</td><td>&emsp;&emsp;<input name="operationsName2" id="operationsName2" size="15" maxlength="40"/>
+                                <tr><td name="divisionGroup">Division/Group Supervisor:</td><td>&emsp;&emsp;<input name="operationsName2" id="operationsName2" size="15" maxlength="40"/>
                                     &emsp;&emsp;&emsp;&emsp;<input name="operationsContact2" id="operationsContact2" size="22" maxlength="35"/></td></tr>
                             </table>
                         </td>
@@ -94,7 +94,7 @@
                         </td>                        
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned">
                             <input name="resource1" id="resource1" size="14" maxlength="35"/>
                             <input name="leader1" id="leader1" size="11" maxlength="35"/>
                             <input name="persons1" id="persons1" size="11" maxlength="35"/>
@@ -103,7 +103,7 @@
 
                         </td>
                     </tr>
-                    <tr colspan="3">
+                    <tr colspan="3" name="resourcesAssigned1">
                         <td colspan="3">
                             <input name="resource2" id="resource2" size="14" maxlength="35"/>
                             <input name="leader2" id="leader2" size="11" maxlength="35"/>
@@ -113,7 +113,7 @@
                             </td>
                         </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned2">
                             <input name="resource3" id="resource3" size="14" maxlength="35"/>
                             <input name="leader3" id="leader3" size="11" maxlength="35"/>
                             <input name="persons3" id="persons3" size="11" maxlength="35"/>
@@ -122,7 +122,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned3">
                             <input name="resource4" id="resource4" size="14" maxlength="35"/>
                             <input name="leader4" id="leader4" size="11" maxlength="35"/>
                             <input name="persons4" id="persons4" size="11" maxlength="35"/>
@@ -131,7 +131,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned4">
                             <input name="resource5" id="resource5" size="14" maxlength="35"/>
                             <input name="leader5" id="leader5" size="11" maxlength="35"/>
                             <input name="persons5" id="persons5" size="11" maxlength="35"/>
@@ -140,7 +140,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned5">
                             <input name="resource6" id="resource6" size="14" maxlength="35"/>
                             <input name="leader6" id="leader6" size="11" maxlength="35"/>
                             <input name="persons6" id="persons6" size="11" maxlength="35"/>
@@ -149,7 +149,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned6">
                             <input name="resource7" id="resource7" size="14" maxlength="35"/>
                             <input name="leader7" id="leader7" size="11" maxlength="35"/>
                             <input name="persons7" id="persons7" size="11" maxlength="35"/>
@@ -158,7 +158,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned7">
                             <input name="resource8" id="resource8" size="14" maxlength="35"/>
                             <input name="leader8" id="leader8" size="11" maxlength="35"/>
                             <input name="persons8" id="persons8" size="11" maxlength="35"/>
@@ -167,7 +167,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned8">
                             <input name="resource9" id="resource9" size="14" maxlength="35"/>
                             <input name="leader9" id="leader9" size="11" maxlength="35"/>
                             <input name="persons9" id="persons9" size="11" maxlength="35"/>
@@ -176,7 +176,7 @@
                         </td>
                     </tr>
                     <tr colspan="3">
-                        <td colspan="3">
+                        <td colspan="3" name="resourcesAssigned9">
                             <input name="resource10" id="resource10" size="14" maxlength="35"/>
                             <input name="leader10" id="leader10" size="11" maxlength="35"/>
                             <input name="persons10" id="persons10" size="11" maxlength="35"/>
@@ -205,28 +205,28 @@
                                         
                                 </table>
                                 <tr>
-                                    <td colspan="3">
+                                    <td colspan="3" name="communications">
                                         <input name="communicationsName" id="communicationsName" size="18" maxlength="35"/>&nbsp;/
                                         <input name="communicationsAssignment" id="communicationsAssignment" size="16" maxlength="35"/>
                                         <input name="communicationsContact" id="communicationsContact" size="78" maxlength="95"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3">
+                                    <td colspan="3" name="communications1">
                                         <input name="communicationsName1" id="communicationsName1" size="18" maxlength="35"/>&nbsp;/
                                         <input name="communicationsAssignment1" id="communicationsAssignment1" size="16" maxlength="35"/>
                                         <input name="communicationsContact1" id="communicationsContact1" size="78" maxlength="95"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3">
+                                    <td colspan="3" name="communications2">
                                         <input name="communicationsName2" id="communicationsName2" size="18" maxlength="35"/>&nbsp;/
                                         <input name="communicationsAssignment2" id="communicationsAssignment2" size="16" maxlength="35"/>
                                         <input name="communicationsContact2" id="communicationsContact2" size="78" maxlength="95"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3">
+                                    <td colspan="3" name="communications3">
                                         <input name="communicationsName3" id="communicationsName3" size="18" maxlength="35"/>&nbsp;/
                                         <input name="communicationsAssignment3" id="communicationsAssignment3" size="16" maxlength="35"/>
                                         <input name="communicationsContact3" id="communicationsContact3" size="78" maxlength="95"/>

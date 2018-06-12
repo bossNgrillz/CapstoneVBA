@@ -120,7 +120,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
                     <li>Level of Service</li>
                     &#9633; ALS &#9633; BLS
                 </ul
-            </td>
+                </td>
             <td colspan="9" rowspan="1">Indicate the level of service available for each ambulance, either ALS (Advanced Life Support) or BLS (Basic Life Support).</td>
         </tr>
         <tr>
@@ -239,7 +239,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 </tr>
 <tr>
 <td style="text-align: center;" colspan="5">
-<strong>1. Incident Name:</strong> <input title="Incident number optional" maxlength="45" name="Incident_Name" required="required" size="50"> &nbsp;<br>
+<strong>1. Incident Name:</strong> <input title="Incident number optional" maxlength="45" name="206Incident_Name" required="required" size="50"> &nbsp;<br>
 <strong>2. Operational Period:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     Date From:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
     &nbsp;&nbsp;&nbsp;Date To:&nbsp; <input title="Click to change the date or overwrite" name="Mdate" id="Mdate" size="11" maxlength="10" onclick="SetDateTime('fulldate',this.id)" />
@@ -262,7 +262,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="4"><input maxlength="70" name="Med_Loc1" size="70" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="contact" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="29"> &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Med_Line1" pbzloc="1" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Med_Line1" pbzloc="1" size="2"><option name="yes" value="YES">YES</option><option name="no" value="NO">NO</option><option selected="selected" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="7"><input maxlength="70" name="Med_Loc2" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="contact2" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="11"> &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Med_Line2" pbzloc="5" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Med_Line2" pbzloc="5" size="2"><option name="yes1" value="YES">YES</option><option name="no1" value="NO">NO</option><option selected="selected1" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="10"><input maxlength="70" name="Med_Loc3" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="contact3" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="27"> &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Med_Line3" pbzloc="8" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Med_Line3" pbzloc="8" size="2"><option name="yes2" value="YES">YES</option><option name="no2" value="NO">NO</option><option selected="selected2" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -286,7 +286,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="13"><input maxlength="70" name="Med_Loc4" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="contact4" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="26"> &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Med_Line4" pbzloc="11" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Med_Line4" pbzloc="11" size="2"><option name="yes3" value="YES">YES</option><option name="no3" value="NO">NO</option><option selected="selected3" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -294,7 +294,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="16"><input maxlength="75" name="Med_Loc5" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="contact5" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="25"> &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Med_Line5" pbzloc="14" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Med_Line5" pbzloc="14" size="2"><option name="yes4" value="YES">YES</option><option name="no4" value="NO">NO</option><option selected="selected4" value="--">--</option></select>
 </td>
 </tr>
 <tr style="color: black;">
@@ -312,7 +312,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="19"><input maxlength="70" name="Amb_Info1" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="transContact1" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="24"> &nbsp; &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Amb_Line1" pbzloc="17" size="2"><option value="ALS">ALS</option><option value="BLS">BLS</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Amb_Line1" pbzloc="17" size="2"><option name="als" value="ALS">ALS</option><option name="bls" value="BLS">BLS</option><option selected="selected5" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -320,7 +320,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="22"><input maxlength="70" name="Amb_Info2" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="transContact2" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="30">&nbsp; &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Amb_Line2" pbzloc="20" size="2"><option value="ALS">ALS</option><option value="BLS">BLS</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Amb_Line2" pbzloc="20" size="2"><option name="als1" value="ALS">ALS</option><option name="bls1" value="BLS">BLS</option><option selected="selected6" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -328,7 +328,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="25"><input maxlength="70" name="Amb_Info3" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="transContact3" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="31">&nbsp; &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Amb_Line3" pbzloc="23" size="2"><option value="ALS">ALS</option><option value="BLS">BLS</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Amb_Line3" pbzloc="23" size="2"><option name="als2" value="ALS">ALS</option><option name="bls2" value="BLS">BLS</option><option selected="selected7" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -336,7 +336,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="28"><input maxlength="70" name="Amb_Info4" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="transContact4" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="32">&nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Amb_Line4" pbzloc="26" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Amb_Line4" pbzloc="26" size="2"><option name="yes5" value="YES">YES</option><option name="no5" value="NO">NO</option><option selected="selected8" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="31"><input maxlength="70" name="Amb_Info5" size="75" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;"><input maxlength="22" name="transContact5" size="20" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" colspan="3" pbzloc="33">&nbsp; &nbsp; &nbsp; &nbsp;
-<select multiple="multiple" name="Amb_Line5" pbzloc="29" size="2"><option value="ALS">ALS</option><option value="BLS">BLS</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Amb_Line5" pbzloc="29" size="2"><option name="als3" value="ALS">ALS</option><option name="bls3" value="BLS">BLS</option><option selected="selected9" value="--">--</option></select>
 </td>
 </tr>
 <tr>
@@ -367,34 +367,34 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad1" size="40" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="223"><input maxlength="18" name="Hosp_Ph1" size="18" type="text"></td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="234">&nbsp;
-    <select multiple="multiple" name="Travel1" pbzloc="41" size="2"><option value="AIR">AIR</option><option value="GND">GND</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="Travel1" pbzloc="41" size="2"><option name="air" value="AIR">AIR</option><option name="gnd" value="GND">GND</option><option selected="selected10" value="--">--</option></select>
     <input maxlength="10" name="travelTime" size="7" type="text">
     </td>
 <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="233">&nbsp;
-<select multiple="multiple" name="trauma1" pbzloc="38" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="trauma1" pbzloc="38" size="2"><option name="yes6" value="YES">YES</option><option name="no6" value="NO">NO</option><option selected="selected11" value="--">--</option></select>
 </td>
 <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-<select multiple="multiple" name="Burn_Cntr1" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+<select multiple="multiple" name="Burn_Cntr1" pbzloc="231" size="2"><option name="yes7" value="YES">YES</option><option name="no7" value="NO">NO</option><option selected="selected12" value="--">--</option></select>
 </td>
 <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-    <select multiple="multiple" name="helipad1" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="helipad1" pbzloc="231" size="2"><option name="yes8" value="YES">YES</option><option name="no8" value="NO">NO</option><option selected="selected13" value="--">--</option></select>
     </td>
 <tr>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="289"><input maxlength="30" name="Hosp_Name2" size="30" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad2" size="40" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="223"><input maxlength="18" name="Hosp_Ph2" size="18" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="234">&nbsp;
-        <select multiple="multiple" name="Travel2" pbzloc="41" size="2"><option value="AIR">AIR</option><option value="GND">GND</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="Travel2" pbzloc="41" size="2"><option name="air1" value="AIR">AIR</option><option name="gnd1" value="GND">GND</option><option selected="selected14" value="--">--</option></select>
         <input maxlength="10" name="travelTime2" size="7" type="text">
         </td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="233">&nbsp;
-    <select multiple="multiple" name="trauma2" pbzloc="38" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="trauma2" pbzloc="38" size="2"><option name="yes9" value="YES">YES</option><option name="no9" value="NO">NO</option><option selected="selected15" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-    <select multiple="multiple" name="Burn_Cntr2" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="Burn_Cntr2" pbzloc="231" size="2"><option name="yes10" value="YES">YES</option><option name="no10" value="NO">NO</option><option selected="selected16" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-        <select multiple="multiple" name="helipad2" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="helipad2" pbzloc="231" size="2"><option name="yes11" value="YES">YES</option><option name="no11" value="NO">NO</option><option selected="selected17" value="--">--</option></select>
         </td>
 </tr>
 <tr>
@@ -402,17 +402,17 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad3" size="40" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="223"><input maxlength="18" name="Hosp_Ph3" size="18" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="234">&nbsp;
-        <select multiple="multiple" name="Travel3" pbzloc="41" size="2"><option value="AIR">AIR</option><option value="GND">GND</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="Travel3" pbzloc="41" size="2"><option name="air2" value="AIR">AIR</option><option name="gnd2" value="GND">GND</option><option selected="selected18" value="--">--</option></select>
         <input maxlength="10" name="travelTime3" size="7" type="text">
         </td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="233">&nbsp;
-    <select multiple="multiple" name="trauma3" pbzloc="38" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="trauma3" pbzloc="38" size="2"><option name="yes12" value="YES">YES</option><option name="no12" value="NO">NO</option><option selected="selected19" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-    <select multiple="multiple" name="Burn_Cntr3" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="Burn_Cntr3" pbzloc="231" size="2"><option name="yes13" value="YES">YES</option><option name="no13" value="NO">NO</option><option selected="selected20" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-        <select multiple="multiple" name="helipad3" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="helipad3" pbzloc="231" size="2"><option name="yes14" value="YES">YES</option><option name="no14" value="NO">NO</option><option selected="selected21" value="--">--</option></select>
         </td>
 </tr>
 <tr>
@@ -420,17 +420,17 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad4" size="40" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="223"><input maxlength="18" name="Hosp_Ph4" size="18" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="234">&nbsp;
-        <select multiple="multiple" name="Travel4" pbzloc="41" size="2"><option value="AIR">AIR</option><option value="GND">GND</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="Travel4" pbzloc="41" size="2"><option name="air3" value="AIR">AIR</option><option name="gnd3" value="GND">GND</option><option selected="selected22" value="--">--</option></select>
         <input maxlength="10" name="travelTime4" size="7" type="text">
         </td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="233">&nbsp;
-    <select multiple="multiple" name="trauma4" pbzloc="38" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="trauma4" pbzloc="38" size="2"><option name="yes15" value="YES">YES</option><option name="no15" value="NO">NO</option><option selected="selected23" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-    <select multiple="multiple" name="Burn_Cntr4" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="Burn_Cntr4" pbzloc="231" size="2"><option name="yes16" value="YES">YES</option><option name="no16" value="NO">NO</option><option selected="selected24" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-        <select multiple="multiple" name="helipad4" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="helipad4" pbzloc="231" size="2"><option name="yes17" value="YES">YES</option><option name="no17" value="NO">NO</option><option selected="selected25" value="--">--</option></select>
         </td>
 </tr>
 <tr>
@@ -438,17 +438,17 @@ The ICS 206 serves as part of the IAP. This form can include multiple pages.
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="189"><input maxlength="40" name="Hosp_Ad5" size="40" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="223"><input maxlength="18" name="Hosp_Ph5" size="18" type="text"></td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="234">&nbsp;
-        <select multiple="multiple" name="Travel5" pbzloc="41" size="2"><option value="AIR">AIR</option><option value="GND">GND</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="Travel5" pbzloc="41" size="2"><option name="air4" value="AIR">AIR</option><option name="gnd4" value="GND">GND</option><option selected="selected26" value="--">--</option></select>
         <input maxlength="10" name="travelTime5" size="7" type="text">
         </td>
     <td style="text-align: center; vertical-align: middle; background-color: white;" pbzloc="233">&nbsp;
-    <select multiple="multiple" name="trauma5" pbzloc="38" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="trauma5" pbzloc="38" size="2"><option name="yes18" value="YES">YES</option><option name="no18" value="NO">NO</option><option selected="selected27" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-    <select multiple="multiple" name="Burn_Cntr5" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+    <select multiple="multiple" name="Burn_Cntr5" pbzloc="231" size="2"><option name="yes19" value="YES">YES</option><option name="no19" value="NO">NO</option><option selected="selected28" value="--">--</option></select>
     </td>
     <td pbzloc="30" style="text-align: center; vertical-align: middle; background-color: white;">
-        <select multiple="multiple" name="helipad5" pbzloc="231" size="2"><option value="YES">YES</option><option value="NO">NO</option><option selected="selected" value="--">--</option></select>
+        <select multiple="multiple" name="helipad5" pbzloc="231" size="2"><option name="yes20" value="YES">YES</option><option name="no20" value="NO">NO</option><option selected="selected29" value="--">--</option></select>
         </td>
 </tr>
 <tr class="formtext">
